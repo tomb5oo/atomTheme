@@ -18,8 +18,8 @@ if(!$conn){
 
 session_start(); //Run session
 
-define('DIR', 'http://localhost/ultrasound-festival-custom-cms/');//Attach root to DIR variable
-define('DIR_ADMIN', 'http://localhost/ultrasound-festival-custom-cms/admin/');//Attach admin to DIR_ADMIN variable
+define('DIR', 'http://localhost/atomtheme/');//Attach root to DIR variable
+define('DIR_ADMIN', 'http://localhost/atomtheme/admin/');//Attach admin to DIR_ADMIN variable
 
 define('SITE_TITLE', 'Atom Theme - Ecommerce'); //site title
 
