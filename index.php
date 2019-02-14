@@ -128,6 +128,8 @@
         <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
       </div>
 
+      </div>
+
       <div class="row">
         <footer class="page-footer font-small pt-4" style="background-color: lightgrey;">
           <div class="container-fluid text-center text-md-left">
@@ -149,7 +151,7 @@
         </footer>
       </div>
 
-      </div>
+
 
     </body>
   </html>
