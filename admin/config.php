@@ -13,7 +13,7 @@ $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
 if(!$conn){
     die("error connecting to db");
 }else{
-    "connected successfully!";
+    "connected successfully";
 }
 
 session_start(); //Run session
