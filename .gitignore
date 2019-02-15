@@ -4,4 +4,4 @@ config.php
 
 admin/
 .DS_Store
-
+._index.php
