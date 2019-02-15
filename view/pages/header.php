@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Custom JavaScript-->
-    <script src="<?php echo DIR?>media/scripts/main.js"></script>
+    <script src="<?php echo DIR ?>media/scripts/main.js"></script>
 
     <!--Custom styles-->
     <link rel="stylesheet" href="<?php echo DIR?>media/styles/css/style.css" type="text/css">

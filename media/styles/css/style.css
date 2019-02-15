@@ -190,6 +190,8 @@ textarea {
   table#cart tfoot td .btn {
     display: block; } }
 
+    /*
+
     <?php
 
     //Assign database details to variables
@@ -211,8 +213,10 @@ textarea {
     session_start(); //Run session
 
     define('DIR', 'http://localhost:8080/atomtheme/');//Attach root to DIR variable
-    define('DIR_ADMIN', 'http://localhost:8080/ultrasound-festival-custom-cms/admin/');//Attach admin to DIR_ADMIN variable
+    define('DIR_ADMIN', 'http://localhost:8080/atomtheme/admin/');//Attach admin to DIR_ADMIN variable
 
     define('SITE_TITLE', 'Atom - An E-Commerce Template'); //site title
 
     ?>
+
+    */
