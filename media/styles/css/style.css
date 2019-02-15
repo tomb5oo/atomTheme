@@ -189,3 +189,30 @@ textarea {
     display: block; }
   table#cart tfoot td .btn {
     display: block; } }
+
+    <?php
+
+    //Assign database details to variables
+    define('DBHOST', 'localhost');
+    define('DBUSER', 'root');
+    define('DBPASS', 'oranges11');
+    define('DBNAME', 'atomthemedb');
+
+    //Setup database connection
+    $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
+
+    //Check if connection was successful
+    if(!$conn){
+        die("<span style='color:red;'>Error connecting to database</span>");
+    }else{
+        //echo "connected successfully";
+    }
+
+    session_start(); //Run session
+
+    define('DIR', 'http://localhost:8080/atomtheme/');//Attach root to DIR variable
+    define('DIR_ADMIN', 'http://localhost:8080/ultrasound-festival-custom-cms/admin/');//Attach admin to DIR_ADMIN variable
+
+    define('SITE_TITLE', 'Atom - An E-Commerce Template'); //site title
+
+    ?>
