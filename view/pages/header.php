@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+    <?php include('../../admin/config.php'); // Include config file  ?>
+
     <!--Character Set-->
     <meta charset="utf-8">
 
@@ -17,8 +20,12 @@
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Custom JavaScript-->
+    <script src="<?php echo DIR?>media/scripts/main.js"></script>
+
     <!--Custom styles-->
-    <link rel="stylesheet" href="<?php echo DIR?>media/styles/main.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo DIR?>media/styles/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo DIR?>media/styles/sass/main.css" type="text/css">
 
     <!--Font Awesome Link-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
