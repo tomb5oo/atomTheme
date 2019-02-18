@@ -4,7 +4,8 @@
   "description": "landing page for atomTheme",
   "main": "index.js",
   "scripts": {
-      "compile:sass": "node-sass sass/main.scss ../css/style.css -w"
+      "compile:sass": "node-sass media/styles/sass/main.scss media/styles/css/main.css"
+
   },
   "author": "Tom Bennett",
   "license": "ISC",
