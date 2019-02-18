@@ -2,7 +2,11 @@
   include('header.php');
   include('nav.php');
 ?>
+<<<<<<< HEAD
 test 123
+=======
+test456
+>>>>>>> 544fa0be8724ed2853ad8e1003618967d83545d6
 <div class="container-fluid">
 
   <div class="row">
