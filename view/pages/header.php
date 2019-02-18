@@ -2,7 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
 
-    <?php include('../../admin/config.php'); // Include config file  ?>
+    <?php include('../../admin/config.php'); // Include config file
+          include("../../controller/controls.php");?>
 
     <!--Character Set-->
     <meta charset="utf-8">
