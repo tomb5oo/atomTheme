@@ -19,7 +19,7 @@
 
       <?php productImage(); ?>
 
-<!-- MOVED TO CONTOLS -->
+<!-- MOVED TO CONTOLS productImage() - this is here as a temporary reminder -->
 
 			<!-- <tr>
 				<td data-th="Product">
