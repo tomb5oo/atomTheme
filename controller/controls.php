@@ -76,32 +76,105 @@
 
   		echo "
 
-
-
-
-  				<div class='col-md-3' style='border: 1px solid black; padding: 15px; margin: 0 0 15 30; box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .1);'>
-
-
-
-  					<img src='../../media/images/trees.jpeg' width='180' height='180' >
-
-  					<h3>$pro_title</h3>
-
-  					<p><b> Price: £$pro_price </b></p>
-
-  					<a href='details.php?pro_id=$pro_id'>Details</a>
-
-  					<a href='index.php?add_cart=$pro_id'><button type='button' class='btn-sm btn-info'>Add to Carte</button></a>
-
-  				</div>
-
-
-  		";
+            <div class='col-lg-4 col-md-6 col-xs-12' style='padding: 1rem;'>
+              <img src='../../media/images/trees.jpeg' height='100rem' >
+            </div>";
 
   	// }
   	// }
   }
 
   }
+
+  function individualProductCarousel(){
+
+	// if(!isset($_GET['cat'])){
+	// 	if(!isset($_GET['brand'])){
+
+	global $con;
+
+	$get_pro = "SELECT * FROM products order by RAND() LIMIT 0,6";
+
+	$run_pro = mysqli_query($con, $get_pro);
+
+	while($row_pro=mysqli_fetch_array($run_pro)){
+
+		$pro_id = $row_pro['product_id'];
+		$pro_cat = $row_pro['product_cat'];
+		$pro_brand = $row_pro['product_brand'];
+		$pro_title = $row_pro['product_title'];
+		$pro_price = $row_pro['product_price'];
+		$pro_image = $row_pro['product_image'];
+
+		echo "
+    <div class='carousel-item'>
+      <img class='d-block w-100' src='../../media/images/tshirt2.jpg' alt='Second slide' height='auto' width='100%'>
+      <div class='carousel-caption d-md-block'></div>
+    </div>
+
+
+
+		";
+
+	}
+	}
+// }
+//
+// }
+
+function individualProductDescription(){
+
+// if(!isset($_GET['cat'])){
+// 	if(!isset($_GET['brand'])){
+
+global $con;
+
+$get_pro = "SELECT * FROM products";
+
+$run_pro = mysqli_query($con, $get_pro);
+
+while($row_pro=mysqli_fetch_array($run_pro)){
+
+  $pro_id = $row_pro['product_id'];
+  $pro_cat = $row_pro['product_cat'];
+  $pro_brand = $row_pro['product_brand'];
+  $pro_title = $row_pro['product_title'];
+  $pro_price = $row_pro['product_price'];
+  $pro_image = $row_pro['product_image'];
+
+  echo "
+        <div class='col-lg-6 col-md-4 col-sm-12'>
+          <div class='col-12' style='margin: auto 0'>
+            <div class='row'>
+              <h2>$pro_title</h2>
+            </div>
+            <div class='row'>
+              <h3>$pro_brand</h3>
+            </div>
+            <div class='row'>
+              <p>Description - orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class='row'>
+              <p style='margin: auto 10px auto 0;font-weight:bold;'>Price: £0.00</p>
+              <div id='input_div' style='margin: auto 10px auto 0'>
+                  <button class='btn btn-outline-light text-dark' type='button' id='moins' onclick='minus()'>-</button>
+                  <input type='text' size='5' value='1' id='count' style='text-align:center;height:36px;'>
+                  <button class='btn btn-outline-light text-dark' type='button' id='plus' onclick='plus()'>+</button>
+              </div>
+              <button class='btn btn-outline-success my-2 my-sm-0' type='submit'>Add to basket</button>
+            </div>
+          </div>
+        </div>
+
+
+
+  ";
+
+}
+}
+// }
+//
+// }
+
 
 ?>

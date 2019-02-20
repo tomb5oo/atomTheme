@@ -17,15 +17,20 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100" src="media/images/tshirt1.jpg" alt="First slide" height="auto" width="100%">
+                    <img class="d-block w-100" src="../../media/images/tshirt1.jpg" alt="First slide" height="auto" width="100%">
                     <div class="carousel-caption d-md-block"></div>
                   </div>
-                  <div class="carousel-item">
+
+                  <?php individualProductCarousel() ?>
+
+                  <!-- MOVED TO controls.php - left in as temporary reference -->
+
+                  <!-- <div class="carousel-item">
                     <img class="d-block w-100" src="media/images/tshirt2.jpg" alt="Second slide" height="auto" width="100%">
                     <div class="carousel-caption d-md-block"></div>
-                  </div>
+                  </div> -->
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="media/images/tshirt3.jpg" alt="Third slide" height="auto" width="100%">
+                    <img class="d-block w-100" src="../../media/images/tshirt3.jpg" alt="Third slide" height="auto" width="100%">
                     <div class="carousel-caption d-md-block"></div>
                   </div>
                 </div>
@@ -41,7 +46,9 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-4 col-sm-12">
+
+        <?php individualProductDescription() ?>
+        <!-- <div class="col-lg-6 col-md-4 col-sm-12">
           <div class="col-12" style="margin: auto 0">
             <div class="row">
               <h2>Item Name</h2>
@@ -62,7 +69,7 @@
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Add to basket</button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
 
     <div class="row">
