@@ -27,9 +27,9 @@
         <a class="nav-link disabled" href="#">Disabled</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <form method="get" class="form-inline my-2 my-lg-0" action="results.php" enctype="multipart/form-data">
+						<input name="user_query" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="search">Search</button>
+					</form>
   </div>
 </nav>

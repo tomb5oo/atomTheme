@@ -122,6 +122,9 @@
 //
 // }
 
+
+// ITEM DESCRIPTIONS FOR itempage.php
+
 function individualProductDescription(){
 
 // if(!isset($_GET['cat'])){
@@ -175,6 +178,10 @@ while($row_pro=mysqli_fetch_array($run_pro)){
 // }
 //
 // }
+
+
+
+
 
 
 ?>
