@@ -17,7 +17,7 @@
 		</thead>
 		<tbody>
 
-      <?php productImage(); ?>
+      <?php allProducts(); ?>
 
 <!-- MOVED TO CONTOLS productImage() - this is here as a temporary reminder -->
 

@@ -52,43 +52,56 @@
 
 
 
-  // DISPLAY PRODUCT WITH ADD TO CART BUTTON
+  // DISPLAY ALL PRODUCTS
 
-  function productImage() {
-    // if(isset($_GET['cat'])) {
-    //
-    //     $cat_id = $_GET['cat'];
-    //
-    //         global $con;
-    //
-    //         $get_cat_pro = "SELECT * FROM products WHERE product_cat='$cat_id'";
-    //         $run_cat_pro = mysqli_query($con, $get_cat_pro);
-    //         $count_cats = mysqli_num_rows($run_cat_pro);
-    //
-    //         if ($count_cats==0) {
-    //
-    //             echo "<h2 style='padding:50px;'> There is no product in this category</h2>";
-    //         }
-    //
-    //         while ($row_cat_pro = mysqli_fetch_array($run_cat_pro)) {
-    //
-    //             $pro_id = $row_cat_pro['product_id'];
-    //             $pro_cat = $row_cat_pro['product_cat'];
-    //             $pro_brand = $row_cat_pro['product_brand'];
-    //             $pro_title = $row_cat_pro['product_title'];
-    //             $pro_price = $row_cat_pro['product_price'];
-    //             $pro_image = $row_cat_pro['product_image'];
+  function allProducts() {
 
-                  echo "
-                    <div id='single_product'>
-                      <h3>pro_title</h3>
-                      <img src='admin_area/product_images/pro_image' width='180' height='180' />
-                      <p><b> £pro_price <b></p>
-                      <a href='details.php?pro_id=pro_id' style='float:left;'>Details</a>
-                      <a href='index.php?pro_id=pro_id'><button style='float:right'>Add to cart</button></a>
-                    </div>";
-                  }
-              //   }
-              // }
+  	// if(!isset($_GET['cat'])){
+  	// 	if(!isset($_GET['brand'])){
+
+  	global $con;
+
+  	$get_productImage = "SELECT * FROM products";
+
+  	$run_productImage = mysqli_query($con, $get_productImage);
+
+  	while($sql_productImage=mysqli_fetch_array($run_productImage)){
+
+  		$pro_id = $sql_productImage['product_id'];
+  		$pro_cat = $sql_productImage['product_cat'];
+  		$pro_brand = $sql_productImage['product_brand'];
+  		$pro_title = $sql_productImage['product_title'];
+  		$pro_price = $sql_productImage['product_price'];
+  		$pro_image = $sql_productImage['product_image'];
+
+  		echo "
+
+
+
+
+  				<div class='col-md-3' style='border: 1px solid black; padding: 15px; margin: 0 0 15 30; box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .1);'>
+
+
+
+  					<img src='../../media/images/trees.jpeg' width='180' height='180' >
+
+  					<h3>$pro_title</h3>
+
+  					<p><b> Price: £$pro_price </b></p>
+
+  					<a href='details.php?pro_id=$pro_id'>Details</a>
+
+  					<a href='index.php?add_cart=$pro_id'><button type='button' class='btn-sm btn-info'>Add to Carte</button></a>
+
+  				</div>
+
+
+  		";
+
+  	// }
+  	// }
+  }
+
+  }
 
 ?>
