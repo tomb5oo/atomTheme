@@ -77,7 +77,7 @@
   		echo "
 
             <div class='col-lg-4 col-md-6 col-xs-12' style='padding: 1rem;'>
-              <img src='../../media/images/trees.jpeg' height='100rem' >
+              <img src='../../media/images/stockImage.jpg' height='300rem' >
             </div>";
 
   	// }
@@ -108,7 +108,7 @@
 
 		echo "
     <div class='carousel-item'>
-      <img class='d-block w-100' src='../../media/images/tshirt2.jpg' alt='Second slide' height='auto' width='100%'>
+      <img class='d-block w-100' src='../../media/images/stockImage.jpg' alt='Second slide' height='auto' width='100%'>
       <div class='carousel-caption d-md-block'></div>
     </div>
 
