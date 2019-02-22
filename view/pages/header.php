@@ -22,7 +22,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Custom styles-->
-    <link rel="stylesheet" href="<?php echo DIR?>media/styles/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo DIR?>media/styles/css/cart.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo DIR?>media/styles/css/home.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo DIR?>media/styles/css/itemPage.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo DIR?>media/styles/css/login.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo DIR?>media/styles/css/main.css" type="text/css">
+
     <link rel="stylesheet" href="<?php echo DIR?>media/styles/sass/main.css" type="text/css">
 
     <!--Font Awesome Link-->
