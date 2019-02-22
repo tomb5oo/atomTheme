@@ -19,18 +19,18 @@ if(isset($_GET['search'])){
 
 	$search_query = $_GET['user_query'];
 
-	$get_pro = "SELECT * FROM products WHERE product_keywords LIKE '%$search_query%'";
+	$get_products = "SELECT * FROM products WHERE product_keywords LIKE '%$search_query%'";
 
-	$run_pro = mysqli_query($con, $get_pro);
+	$run_products = mysqli_query($con, $get_products);
 
-	while($row_pro=mysqli_fetch_array($run_pro)){
+	while($row_products=mysqli_fetch_array($run_products)){
 
-		$pro_id = $row_pro['product_id'];
-		$pro_cat = $row_pro['product_cat'];
-		$pro_brand = $row_pro['product_brand'];
-		$pro_title = $row_pro['product_title'];
-		$pro_price = $row_pro['product_price'];
-		$pro_image = $row_pro['product_image'];
+		$pro_id = $row_products['product_id'];
+		$pro_cat = $row_products['product_cat'];
+		$pro_brand = $row_products['product_brand'];
+		$pro_title = $row_products['product_title'];
+		$pro_price = $row_products['product_price'];
+		$pro_image = $row_products['product_image'];
 
 		echo "
 				<div id='single_product'>
