@@ -1,6 +1,11 @@
 
 
-			<div class="row">
+<?php
+	include('header.php');
+	include('nav.php');
+?>
+
+	<div class="row">
 
 	<div id="products_box">
 

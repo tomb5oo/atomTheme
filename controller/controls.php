@@ -61,7 +61,7 @@
 
   	global $con;
 
-  	$get_productImage = "SELECT * FROM products";
+  	$get_productImage = "SELECT * FROM products order by RAND() LIMIT 0,2";
 
   	$run_productImage = mysqli_query($con, $get_productImage);
 
