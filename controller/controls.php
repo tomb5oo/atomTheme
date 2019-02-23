@@ -61,7 +61,7 @@
 
   	global $con;
 
-  	$get_productImage = "SELECT * FROM products order by RAND() LIMIT 0,2";
+  	$get_productImage = "SELECT * FROM products order by RAND() LIMIT 0,6";
 
   	$run_productImage = mysqli_query($con, $get_productImage);
 
@@ -76,9 +76,30 @@
 
   		echo "
 
-            <div class='col-lg-4 col-md-6 col-xs-12' style='padding: 1rem;'>
-              <img src='../../media/images/stockImage.jpg' height='300rem' >
-            </div>";
+            <tr>
+              <td>
+                <img src='../../media/images/$pro_image' height='300rem' >
+              </td>
+
+              <td>
+                <h1>£400</h1>
+              </td>
+
+              <td>
+                <h1>Header</h1>
+                <p> Description, info, item details etc... Description, info, item details etc...
+                Description, info, item details etc... Description, info, item details etc...
+                Description, info, item details etc... Description, info, item details etc...
+                Description, info, item details etc... Description, info, item details etc...
+              </td>
+
+              <td>
+                <p>£1000<p>
+              </td>
+            </tr>
+
+
+            ";
 
   	// }
   	// }
