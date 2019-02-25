@@ -22,6 +22,6 @@
   </body>
 
   <!--Custom JavaScript-->
-  <script src="<?php echo DIR ?>media/scripts/main.js"></script>
-  
+  <script src="<?php echo DIR?>media/scripts/main.js"></script>
+
 </html>

@@ -1,6 +1,7 @@
 //Login Form JavaScript**********************************************
 
-$('.form').find('input, textarea').on('keyup blur focus', function (e) {
+
+$('.login_register_form').find('input').on('keyup blur focus', function (e) {
 
   var $this = $(this),
   label = $this.prev('label');
@@ -12,22 +13,22 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
       label.addClass('active highlight');
     }
   } else if (e.type === 'blur') {
-      if( $this.val() === '' ) {
+      if ($this.val() === '') {
         label.removeClass('active highlight');
       } else {
         label.removeClass('highlight');
       }
   } else if (e.type === 'focus') {
-      if( $this.val() === '' ) {
+      if ($this.val() === '') {
       label.removeClass('highlight');
       }
-      else if( $this.val() !== '' ) {
+      else if ($this.val() !== '') {
       label.addClass('highlight');
       }
   }
 });
 
-$('.tab a').on('click', function (e) {
+$('.selection_tab a').on('click', function (e) {
 
   e.preventDefault();
 
@@ -36,7 +37,7 @@ $('.tab a').on('click', function (e) {
 
   target = $(this).attr('href');
 
-  $('.tab-content > div').not(target).hide();
+  $('.form_content > div').not(target).hide();
 
   $(target).fadeIn(600);
 
