@@ -52,43 +52,157 @@
 
 
 
-  // DISPLAY PRODUCT WITH ADD TO CART BUTTON
+  // DISPLAY ALL PRODUCTS
 
-  function productImage() {
-    // if(isset($_GET['cat'])) {
-    //
-    //     $cat_id = $_GET['cat'];
-    //
-    //         global $con;
-    //
-    //         $get_cat_pro = "SELECT * FROM products WHERE product_cat='$cat_id'";
-    //         $run_cat_pro = mysqli_query($con, $get_cat_pro);
-    //         $count_cats = mysqli_num_rows($run_cat_pro);
-    //
-    //         if ($count_cats==0) {
-    //
-    //             echo "<h2 style='padding:50px;'> There is no product in this category</h2>";
-    //         }
-    //
-    //         while ($row_cat_pro = mysqli_fetch_array($run_cat_pro)) {
-    //
-    //             $pro_id = $row_cat_pro['product_id'];
-    //             $pro_cat = $row_cat_pro['product_cat'];
-    //             $pro_brand = $row_cat_pro['product_brand'];
-    //             $pro_title = $row_cat_pro['product_title'];
-    //             $pro_price = $row_cat_pro['product_price'];
-    //             $pro_image = $row_cat_pro['product_image'];
+  function allProducts() {
 
-                  echo "
-                    <div id='single_product'>
-                      <h3>pro_title</h3>
-                      <img src='admin_area/product_images/pro_image' width='180' height='180' />
-                      <p><b> £pro_price <b></p>
-                      <a href='details.php?pro_id=pro_id' style='float:left;'>Details</a>
-                      <a href='index.php?pro_id=pro_id'><button style='float:right'>Add to cart</button></a>
-                    </div>";
-                  }
-              //   }
-              // }
+  	// if(!isset($_GET['cat'])){
+  	// 	if(!isset($_GET['brand'])){
+
+  	global $con;
+
+  	$get_productImage = "SELECT * FROM products order by RAND() LIMIT 0,6";
+
+  	$run_productImage = mysqli_query($con, $get_productImage);
+
+  	while($sql_productImage=mysqli_fetch_array($run_productImage)){
+
+  		$pro_id = $sql_productImage['product_id'];
+  		$pro_cat = $sql_productImage['product_cat'];
+  		$pro_brand = $sql_productImage['product_brand'];
+  		$pro_title = $sql_productImage['product_title'];
+  		$pro_price = $sql_productImage['product_price'];
+  		$pro_image = $sql_productImage['product_image'];
+
+  		echo "
+
+            <tr>
+              <td>
+                <img src='../../media/images/$pro_image' height='300rem' >
+              </td>
+
+              <td>
+                <h1>£400</h1>
+              </td>
+
+              <td>
+                <h1>Header</h1>
+                <p> Description, info, item details etc... Description, info, item details etc...
+                Description, info, item details etc... Description, info, item details etc...
+                Description, info, item details etc... Description, info, item details etc...
+                Description, info, item details etc... Description, info, item details etc...
+              </td>
+
+              <td>
+                <p>£1000<p>
+              </td>
+            </tr>
+
+
+            ";
+
+  	// }
+  	// }
+  }
+
+  }
+
+  function individualProductCarousel(){
+
+	// if(!isset($_GET['cat'])){
+	// 	if(!isset($_GET['brand'])){
+
+	global $con;
+
+	$get_pro = "SELECT * FROM products order by RAND() LIMIT 0,6";
+
+	$run_pro = mysqli_query($con, $get_pro);
+
+	while($row_pro=mysqli_fetch_array($run_pro)){
+
+		$pro_id = $row_pro['product_id'];
+		$pro_cat = $row_pro['product_cat'];
+		$pro_brand = $row_pro['product_brand'];
+		$pro_title = $row_pro['product_title'];
+		$pro_price = $row_pro['product_price'];
+		$pro_image = $row_pro['product_image'];
+
+		echo "
+    <div class='carousel-item'>
+      <img class='d-block w-100' src='../../media/images/$pro_image' alt='Second slide' height='auto' width='100%'>
+      <div class='carousel-caption d-md-block'></div>
+    </div>
+
+
+
+		";
+
+	}
+	}
+// }
+//
+// }
+
+
+// ITEM DESCRIPTIONS FOR itempage.php
+
+function individualProductDescription(){
+
+// if(!isset($_GET['cat'])){
+// 	if(!isset($_GET['brand'])){
+
+global $con;
+
+$get_pro = "SELECT * FROM products";
+
+$run_pro = mysqli_query($con, $get_pro);
+
+while($row_pro=mysqli_fetch_array($run_pro)){
+
+  $pro_id = $row_pro['product_id'];
+  $pro_cat = $row_pro['product_cat'];
+  $pro_brand = $row_pro['product_brand'];
+  $pro_title = $row_pro['product_title'];
+  $pro_price = $row_pro['product_price'];
+  $pro_image = $row_pro['product_image'];
+
+  echo "
+        <div class='col-lg-6 col-md-4 col-sm-12'>
+          <div class='col-12' style='margin: auto 0'>
+            <div class='row'>
+              <h2>$pro_title</h2>
+            </div>
+            <div class='row'>
+              <h3>$pro_brand</h3>
+            </div>
+            <div class='row'>
+              <p>Description - orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class='row'>
+              <p style='margin: auto 10px auto 0;font-weight:bold;'>Price: £0.00</p>
+              <div id='input_div' style='margin: auto 10px auto 0'>
+                  <button class='btn btn-outline-light text-dark' type='button' id='moins' onclick='minus()'>-</button>
+                  <input type='text' size='5' value='1' id='count' style='text-align:center;height:36px;'>
+                  <button class='btn btn-outline-light text-dark' type='button' id='plus' onclick='plus()'>+</button>
+              </div>
+              <button class='btn btn-outline-success my-2 my-sm-0' type='submit'>Add to basket</button>
+            </div>
+          </div>
+        </div>
+
+
+
+  ";
+
+}
+}
+// }
+//
+// }
+
+
+
+
+
 
 ?>

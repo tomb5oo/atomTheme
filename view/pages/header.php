@@ -34,7 +34,6 @@
     <link rel="stylesheet" href="<?php echo DIR?>media/styles/sass/itempage.scss" type="text/css">
     <link rel="stylesheet" href="<?php echo DIR?>media/styles/sass/cart.scss" type="text/css">
     <link rel="stylesheet" href="<?php echo DIR?>media/styles/sass/home.scss" type="text/css">
-
     <!--Font Awesome Link-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
