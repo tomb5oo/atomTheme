@@ -4,3 +4,4 @@ admin/
 model/.DS_Store
 controller/.DS_Store
 view/.DS_Store
+wordpress/wp-config.php
