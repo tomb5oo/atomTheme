@@ -2,7 +2,6 @@
   include('header.php');
   include('nav.php');
 ?>
-
 <div class="container-fluid">
 
   <div class="row">
@@ -14,7 +13,7 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="<?php echo DIR ?>media/images/trees.jpeg" alt="First slide" height="650px">
+          <img class="d-block w-100" src="<?php echo DIR?>media/images/yogaTestImage.jpeg" alt="First slide" height="auto" width="100%">
           <div class="carousel-caption d-md-block" style="margin: 15rem 0;">
             <h3 style="font-size: 3rem;">Hello World</h3>
             <a href="#"><button type="button" class="btn btn-secondary">Button 1</button></a>
@@ -22,7 +21,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="<?php echo DIR ?>media/images/trees.jpeg" alt="Second slide" height="650px">
+          <img class="d-block w-100" src="<?php echo DIR?>media/images/yogaTest2.jpeg" alt="Second slide" height="auto" width="100%">
           <div class="carousel-caption d-md-block" style="margin: 15rem 0;">
             <h3 style="font-size: 3rem;">Hello World</h3>
             <a href="#"><button type="button" class="btn btn-secondary">Button 1</button></a>
@@ -30,7 +29,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="<?php echo DIR ?>media/images/trees.jpeg" alt="Third slide" height="650px">
+          <img class="d-block w-100" src="<?php echo DIR?>media/images/trees.jpeg" alt="Third slide" height="auto" width="100%">
           <div class="carousel-caption d-md-block" style="margin: 15rem 0;">
             <h3 style="font-size: 3rem;">Hello World</h3>
             <a href="#"><button type="button" class="btn btn-secondary">Button 1</button></a>
@@ -50,8 +49,8 @@
   </div>
 
   <div class="row">
-    <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
-    <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
+    <?php allProducts ()?>
+    <!-- <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
     <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
 
     <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
@@ -59,7 +58,7 @@
 
     <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
     <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
-    <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
+    <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div> -->
   </div>
 
 </div>
