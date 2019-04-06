@@ -10,92 +10,113 @@
  */
 
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+<!DOCTYPE html>
+<html lang="en" dir="ltr" <?php language_attributes(); ?>>
+  <head>
 
-	<!--Bootstrap Core CSS-->
-	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<!--FontAwesome Icons-->
-	<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!--Character Set-->
+    <meta charset="utf-8">
 
-	<!--custom css-->
-	<!-- <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/custom.css" rel="stylesheet"> -->
+    <!--Site Title-->
+    <title></title>
 
-	<!--Google Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!--Meta Tags-->
+    <meta name="description" content="">
+    <meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+		<!--Bootstrap Core CSS-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
-	<?php wp_head(); ?>
+		<!--FontAwesome Icons-->
+		<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
-	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--jQuery CDN-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
+		<!--custom css-->
+		<!-- <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/custom.css" rel="stylesheet"> -->
 
-</head>
+		<!--Google Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'urbanviolet' ); ?></a>
+		<?php wp_head(); ?>
 
-	<!--HEADER
-	=========================================== -->
-	<header class="site-header" role="banner">
+		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 
-	<!--NAVBAR-->
-		<div class="navbar-wrapper">
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  </head>
 
-				<div class="container">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle Navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-<!--						<a class="navbar-brand" href="/."><img src="#" alt="Logo"></a>-->
-					</div><!--navbar-header-->
+	<body <?php body_class(); ?>>
+		<header class="site-header" role="banner">
+			<!--Bootstrap Navbar-->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
+			  <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+			  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
 
-
-					<?php
-							wp_nav_menu( array(
-
-								'theme_location'		=> 'primary',
-								'containter'				=> 'nav',
-								'container_class'		=> 'navbar-collapse collapse',
-								'menu_class'				=> 'nav navbar-nav navbar-right'
-
-							));
-					?>
-
-					<!-- THIS HAS BEEN REPLACED BY WORDPRESS wp_nav_menu ABOVE -->
-
-					<!-- <div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav navbar-right">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="blog.html">Resources</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-					</div>
-				-->
-
-				</div><!--container-->
-
-			</div><!--navbar-->
-		</div> <!--navbar-wrapper-->
+			  <div class="collapse navbar-collapse" id="navb">
+			    <ul class="navbar-nav mr-auto">
+			      <li class="nav-item">
+			        <a class="nav-link" href="javascript:void(0)">Link</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="javascript:void(0)">Link</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+			      <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+			    </form>
+			  </div>
+			</nav>
 
 
-	</header>
+			<?php
+					wp_nav_menu( array(
+
+						'theme_location'		=> 'primary',
+						'containter'				=> 'nav',
+						'container_class'		=> 'navbar-collapse collapse',
+						'menu_class'				=> 'nav navbar-nav navbar-right'
+
+					));
+			?>
+
+			<!-- THIS HAS BEEN REPLACED BY WORDPRESS wp_nav_menu ABOVE -->
+
+			<!-- <div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="blog.html">Resources</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		-->
+
+		</div><!--container-->
+
+	</div><!--navbar-->
+</div> <!--navbar-wrapper-->
+
+
+</header>
+
 
 	<div id="content" class="site-content">
