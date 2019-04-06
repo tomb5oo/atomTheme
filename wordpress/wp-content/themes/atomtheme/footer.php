@@ -15,95 +15,61 @@
 
 <?php wp_footer(); ?>
 
-<!--SIGN UP
-=========================================== -->
-<section id="signup" data-type="background" data-speed="4">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-6 col-sm-offset-3">
-				<h2>Are you ready to take your coding skill to the <strong>next level</strong></h2>
-				<p><a href="#" class="btn btn-lg btn-block btn-success">Yes sign me up!</a></p>
-
+<!-- Footer -->
+	<section id="footer" style="background:#343a40; color:white;">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4" style="padding-top: 30px;">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" style="padding-top: 30px;">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" style="padding-top: 30px;">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+					</ul>
+				</div>
 			</div>
-
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				</hr>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+				</div>
+				</hr>
+			</div>
 		</div>
-	</div>
-
-</section><!--signup-->
-
-<!--FOOTER
-=========================================== -->
-<footer>
-	<div class="container">
-		<div class="col-sm-3">
-			<p><a href="/."><img src="assets/img/logo.png" alt="bootstrap to wordpress"></a></p>
-		</div>
-		<div class="col-sm-6">
-			<nav>
-				<ul class="list-unstyled list-inline">
-					<li><a href="">Home</a></li>
-					<li><a href="">Blog</a></li>
-					<li><a href="">Resources</a></li>
-					<li><a href="">Contact</a></li>
-					<li class="signup-link"><a href="">Sign up now</a></li>
-				</ul>
-
-			</nav>
-
-		</div>
-		<div class="col-sm-3">
-			<p class="pull-right">&copy; tom bennett</p>
-		</div>
-	</div>
-</footer>
-
-<!--MODAL
-=========================================== -->
-<div class="modal fade" id="myModal">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">close</span></button>
-					<h4 class="modal-title" id="myModalLabel"><i class="fa fa-envelope"></i> Subscribe to our mailing list</h4>
-				</div><!--modal header-->
-
-
-				<div class="modal-body">
-					<p>Enter you name and email</p>
-
-					<form class="form-inline" role="form">
-
-						<div class="form-group">
-							<label class="sr-only" for="subscribe-name">Your first Name</label>
-
-							<input type="text" class="form-control" id="subscribe-name" placeholder="Your first name">
-
-						</div><!--form group-->
-						<div class="form-group">
-							<label class="sr-only" for="subscribe-email">and your email</label>
-
-							<input type="text" class="form-control" id="subscribe-email" placeholder="your email">
-
-						</div><!--form group-->
-
-						<input type="submit" class="btn btn-danger" value="subscribe!">
-
-					</form>
-
-					<hr>
-
-					<p><small>unsubscirbe</small></p>
-				</div><!--modal body-->
-
-
-
-		</div><!--modal conent-->
-
-	</div><!--modal dialog-->
-</div><!--modal-->
-
-<!--HERO
-=========================================== -->
+	</section>
+	<!-- ./Footer -->
 
 <!--HBOOTSTRAP CORE JAVASCRIPT
 	Placed at the end of the document so the pages load faster!
@@ -114,8 +80,11 @@
 
 	<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 
+
+
 	<script type="text/javascript" src="//use.typekit.net/gla7wnd.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 
 </body>
 </html>

@@ -7,6 +7,16 @@
  * @package urbanViolet
  */
 
+ function pp_scripts() {
+// Registering Bootstrap style
+wp_enqueue_style( 'bootstrap_min', get_stylesheet_directory_uri().'/css/bootstrap.min.css' );
+
+wp_enqueue_script('jquery');
+//Registering Bootstrap Script
+wp_enqueue_script( 'bootstrap_min', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '', true );
+}
+add_action( 'wp_enqueue_scripts', 'pp_scripts' );
+
 if ( ! function_exists( 'urbanviolet_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.

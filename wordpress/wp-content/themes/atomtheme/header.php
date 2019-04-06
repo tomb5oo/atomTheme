@@ -9,6 +9,13 @@
  * @package urbanViolet
  */
 
+// advanced custom fields
+
+ $your_logo   = get_field('your_logo');
+ $item_1      = get_field('item_1');
+ $item_2      = get_field('item_2');
+ $item_3      = get_field('item_3');
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr" <?php language_attributes(); ?>>
@@ -32,7 +39,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 		<!--Bootstrap Core CSS-->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"><!--Bootstrap CSS CDN-->
 		<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
 		<!--FontAwesome Icons-->
@@ -41,8 +48,7 @@
     <!--jQuery CDN-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-		<!--custom css-->
-		<!-- <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/custom.css" rel="stylesheet"> -->
+
 
 		<!--Google Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
@@ -62,7 +68,18 @@
 		<header class="site-header" role="banner">
 			<!--Bootstrap Navbar-->
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
-			  <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+
+
+<!-- if user uploaded a logo in wordpress -->
+
+
+          <?php if( !empty($your_logo) ) : ?>
+
+          <a class="navbar-brand" href="javascript:void(0)"><img src="<?php echo $your_logo['url']; ?>"</a>
+
+        <?php endif; ?>
+
+
 			  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
 			    <span class="navbar-toggler-icon"></span>
 			  </button>
@@ -70,13 +87,13 @@
 			  <div class="collapse navbar-collapse" id="navb">
 			    <ul class="navbar-nav mr-auto">
 			      <li class="nav-item">
-			        <a class="nav-link" href="javascript:void(0)">Link</a>
+			        <a class="nav-link" href="javascript:void(0)"><?php echo $item_1; ?></a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link" href="javascript:void(0)">Link</a>
+			        <a class="nav-link" href="javascript:void(0)"><?php echo $item_2; ?></a>
 			      </li>
 			      <li class="nav-item">
-			        <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
+			        <a class="nav-link disabled" href="javascript:void(0)"><?php echo $item_3; ?></a>
 			      </li>
 			    </ul>
 			    <form class="form-inline my-2 my-lg-0">
