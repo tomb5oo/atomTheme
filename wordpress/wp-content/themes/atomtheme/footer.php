@@ -16,7 +16,7 @@
 <?php wp_footer(); ?>
 
 <!-- Footer -->
-	<section id="footer" style="background:#343a40; color:white;">
+	<section id="footer" style="background:#343a40;color:white;padding:0;">
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
 				<div class="col-xs-12 col-sm-4 col-md-4" style="padding-top: 30px;">

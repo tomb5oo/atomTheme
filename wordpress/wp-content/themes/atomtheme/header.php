@@ -40,7 +40,10 @@
 
 		<!--Bootstrap Core CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"><!--Bootstrap CSS CDN-->
-		<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--Bootstrap JQuery CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script><!--Bootstrap JS CDN-->
+
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
 		<!--FontAwesome Icons-->
 		<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -67,7 +70,7 @@
 	<body <?php body_class(); ?>>
 		<header class="site-header" role="banner">
 			<!--Bootstrap Navbar-->
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin:24px 0;">
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin:0;border-radius:0;">
 
 
 <!-- if user uploaded a logo in wordpress -->
@@ -96,7 +99,7 @@
 			        <a class="nav-link disabled" href="javascript:void(0)"><?php echo $item_3; ?></a>
 			      </li>
 			    </ul>
-			    <form class="form-inline my-2 my-lg-0">
+			    <form class="form-inline my-2 my-xl-0" style="float: right;">
 			      <input class="form-control mr-sm-2" type="text" placeholder="Search">
 			      <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
 			    </form>
@@ -105,14 +108,14 @@
 
 
 			<?php
-					wp_nav_menu( array(
-
-						'theme_location'		=> 'primary',
-						'containter'				=> 'nav',
-						'container_class'		=> 'navbar-collapse collapse',
-						'menu_class'				=> 'nav navbar-nav navbar-right'
-
-					));
+					// wp_nav_menu( array(
+          //
+					// 	'theme_location'		=> 'primary',
+					// 	'containter'				=> 'nav',
+					// 	'container_class'		=> 'navbar-collapse collapse',
+					// 	'menu_class'				=> 'nav navbar-nav navbar-right'
+          //
+					// ));
 			?>
 
 			<!-- THIS HAS BEEN REPLACED BY WORDPRESS wp_nav_menu ABOVE -->
@@ -136,4 +139,4 @@
 </header>
 
 
-	<div id="content" class="site-content">
+	<!-- <div id="content" class="site-content"> -->

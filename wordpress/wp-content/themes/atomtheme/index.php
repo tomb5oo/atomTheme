@@ -9,7 +9,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package urbanViolet
+ * @package atomtheme
  */
 
 get_header();

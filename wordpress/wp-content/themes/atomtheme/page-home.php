@@ -32,16 +32,16 @@ get_header();
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/trees.jpeg" alt="First Slide" height="650px">
-          <div class="carousel-caption d-md-block" style="margin: 15rem 0;">
-            <h3 style="font-size: 3rem;"><?php echo $caption_1_title; ?></h3>
-            <a href="#"><button type="button" class="btn btn-secondary"><?php echo $caption_1_button_1; ?></button></a>
-            <a href="#"><button type="button" class="btn btn-dark"><?php echo $caption_1_button_2; ?></button></a>
+          <img class="d-block w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/stuff-bg.jpg" alt="First Slide" height="650px">
+          <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
+            <h3 style="font-size: 3rem;"><?php //echo $caption_1_title; ?>Hello World</h3>
+            <a href="#"><button type="button" class="btn btn-secondary"><?php //echo $caption_1_button_1;?>Button 1</button></a>
+            <a href="#"><button type="button" class="btn btn-dark"><?php //echo $caption_1_button_2; ?>Button 2</button></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/trees.jpeg" alt="Second Slide" alt="Second slide" height="650px">
-          <div class="carousel-caption d-md-block" style="margin: 15rem 0;">
+          <img class="d-block w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/hero-bg.jpg" alt="Second Slide" alt="Second slide" height="650px">
+          <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
             <h3 style="font-size: 3rem;">Hello World</h3>
             <a href="#"><button type="button" class="btn btn-secondary">Button 1</button></a>
             <a href="#"><button type="button" class="btn btn-dark">Button 2</button></a>
@@ -49,7 +49,7 @@ get_header();
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/trees.jpeg" alt="Third Slide" height="650px">
-          <div class="carousel-caption d-md-block" style="margin: 15rem 0;">
+          <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
             <h3 style="font-size: 3rem;">Hello World</h3>
             <a href="#"><button type="button" class="btn btn-secondary">Button 1</button></a>
             <a href="#"><button type="button" class="btn btn-dark">Button 2</button></a>
@@ -69,17 +69,18 @@ get_header();
 
 </div>
 
-<div class="row">
+<div class="row" style="padding:20px;">
   <!-- below can be replaced by 'php allProducts function -->
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="https://via.placeholder.com/728x350.png?text=Placeholder Image"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="https://via.placeholder.com/728x350.png?text=Placeholder Image"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="https://via.placeholder.com/728x350.png?text=Placeholder Image"></div>
 
-  <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
-  <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
+  <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><img src="https://via.placeholder.com/728x350.png?text=Placeholder Image"></div>
+  <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><img src="https://via.placeholder.com/728x350.png?text=Placeholder Image"></div>
 
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><div style="background-color: red; height: 16rem;">Hello</div></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="https://via.placeholder.com/728x350.png?text=Placeholder Image"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="https://via.placeholder.com/728x350.png?text=Placeholder Image"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="https://via.placeholder.com/728x350.png?text=Placeholder Image"></div>
 </div>
 
 </div>
