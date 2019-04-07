@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /atomTheme/wordpress/
+RewriteBase /atomtheme/wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /atomTheme/wordpress/index.php [L]
+RewriteRule . /atomtheme/wordpress/index.php [L]
 </IfModule>
 
 # END WordPress
