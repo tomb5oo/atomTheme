@@ -108,14 +108,14 @@
 
 
 			<?php
-					// wp_nav_menu( array(
-          //
-					// 	'theme_location'		=> 'primary',
-					// 	'containter'				=> 'nav',
-					// 	'container_class'		=> 'navbar-collapse collapse',
-					// 	'menu_class'				=> 'nav navbar-nav navbar-right'
-          //
-					// ));
+					wp_nav_menu( array(
+
+						'theme_location'		=> 'primary',
+						'containter'				=> 'nav',
+						'container_class'		=> 'navbar-collapse collapse',
+						'menu_class'				=> 'nav navbar-nav navbar-right'
+
+					));
 			?>
 
 			<!-- THIS HAS BEEN REPLACED BY WORDPRESS wp_nav_menu ABOVE -->
@@ -127,8 +127,8 @@
 					<li><a href="blog.html">Resources</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
-			</div>
-		-->
+			</div> -->
+
 
 		</div><!--container-->
 

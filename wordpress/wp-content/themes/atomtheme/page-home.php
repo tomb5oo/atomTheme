@@ -34,9 +34,9 @@ get_header();
         <div class="carousel-item active">
           <img class="d-block w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/stuff-bg.jpg" alt="First Slide" height="650px">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
-            <h3 style="font-size: 3rem;"><?php //echo $caption_1_title; ?>Hello World</h3>
-            <a href="#"><button type="button" class="btn btn-secondary"><?php //echo $caption_1_button_1;?>Button 1</button></a>
-            <a href="#"><button type="button" class="btn btn-dark"><?php //echo $caption_1_button_2; ?>Button 2</button></a>
+            <h3 style="font-size: 3rem;"><?php echo $caption_1_title; ?></h3>
+            <a href="#"><button type="button" class="btn btn-secondary"><?php echo $caption_1_button_1;?></button></a>
+            <a href="#"><button type="button" class="btn btn-dark"><?php echo $caption_1_button_2; ?></button></a>
           </div>
         </div>
         <div class="carousel-item">
