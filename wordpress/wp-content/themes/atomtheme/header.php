@@ -35,6 +35,9 @@
     <meta name="author" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Custom CSS-->
+    <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/custom.css" rel="stylesheet">
+
     <!--Font Awesome CDN-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -44,6 +47,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script><!--Bootstrap JS CDN-->
 
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+
+
 
 		<!--FontAwesome Icons-->
 		<link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -56,7 +61,7 @@
 		<!--Google Fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 
-		<?php wp_head(); ?>
+		<?php wp_head(); //get wordpress header ?>
 
 		<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 

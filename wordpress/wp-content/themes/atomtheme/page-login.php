@@ -1,33 +1,13 @@
-$(function() {
+<?php
+/*
+    Template Name: Login Page
+ */
 
-	//Cache the window object
-	var $window = $(window);
+ get_header();
+ //call header.php
 
-	//Parallax background effect
-	$('section[data-type="background"]').each(function() {
-
-		var $bgobj = $(this); // assinging the object
-
-		$(window).scroll(function() {
-
-			// scroll the background at var speed
-			// the yPos is a negative value because we're scrolling up
-
-			var yPos = -($window.scrollTop() / $bgobj.data('speed'));
-
-			//Put together our final backgound position
-
-			var coords = '50% ' + yPos + 'px';
-
-			// Move the background
-			$bgobj.css({ backgroundPosition: coords });
-
-		}); // end window scroll
-	});
-});
-
-/////////////////Login form JS////////////////////////
-$(document).ready(function(){
+ ?>
+ <script>$(document).ready(function(){
 
     // Variables
     var clickedTab = $(".tabs > .active");
@@ -81,6 +61,50 @@ $(document).ready(function(){
             });
         });
     });
-});
+});</script>
 
-///////////////////////////////////////////////////////////////////////////////////////
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12" style="height:800px;">
+
+      <!--Login Form-->
+      <section class="loginWrapper">
+
+      	<ul class="tabs">
+      		<li class="active">Login</li>
+      		<li>Register</li>
+      	</ul>
+
+      	<ul class="tab__content">
+
+      		<li class="active" style="top:-10px;">
+      			<div class="content__wrapper">
+      				<form method="POST" action="">
+      					<input type="email" name="email" placeholder="email">
+      					<input type="password" name="password" placeholder="Password">
+      					<input type="submit" value="Login" name="login">
+      				</form>
+      			</div>
+      		</li>
+
+      		<li style="top:-10px;">
+      			<div class="content__wrapper">
+      				<form method="POST" action="">
+      					<input type="name" name="name" placeholder="Username">
+      					<input type="email" name="email" placeholder="email">
+      					<input type="pass" name="pass" placeholder="Password">
+      					<input type="repass" name="repass" placeholder="Repeat-Password">
+      					<input type="submit" value="Register" name="register">
+      				</form>
+      			</div>
+      		</li>
+
+      	</ul>
+      </section>
+      <!--End of login form-->
+
+    </div>
+  </div>
+</div>
+
+<?php get_footer(); ?>

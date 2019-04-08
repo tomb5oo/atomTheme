@@ -3,7 +3,7 @@ Theme Name: Atom Theme
 Theme URI: http://underscores.me/
 Author: Tom Bennett
 Author URI: http://underscores.me/
-Description: A customisable theme for developers! 
+Description: A customisable theme for developers!
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -1300,7 +1300,7 @@ label {
 	font-weight: bold;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
@@ -1348,7 +1348,7 @@ button[type="submit"]:hover {
 	outline: none;
 	border: none;
 	background: #aaa;
-}
+} */
 
 /*MEDIA QUERIES*/
 
