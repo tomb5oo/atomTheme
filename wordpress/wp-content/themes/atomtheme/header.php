@@ -113,14 +113,14 @@
 
 
 			<?php
-					wp_nav_menu( array(
+				/*	wp_nav_menu( array(
 
 						'theme_location'		=> 'primary',
 						'containter'				=> 'nav',
 						'container_class'		=> 'navbar-collapse collapse',
 						'menu_class'				=> 'nav navbar-nav navbar-right'
 
-					));
+					)); */
 			?>
 
 			<!-- THIS HAS BEEN REPLACED BY WORDPRESS wp_nav_menu ABOVE -->
