@@ -8,6 +8,28 @@
 
 include('config.php');
 
+//Check to see if user is logged in (active session or cookie)
+function logged_in(){
+  //check if user is logged in - session or cookie is set
+  if(isset($_SESSION['email']) || isset($_COOKIE['email'])){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+//Check if email already exists in database
+function email_taken($email, $conn){
+
+  $sql = "SELECT id FROM users WHERE email='$email'";
+  $result = $conn->query($sql);
+
+  if(mysqli_num_rows($result) == 1){
+    return true;
+  }else{
+    return false;
+  }
+}
 
 
   /*******************************REGISTER PHP*********************************/
@@ -71,7 +93,7 @@ include('config.php');
 
   /***********************************LOGIN PHP***************************************/
 
-	if(isset($_POST['login'])){
+  if(isset($_POST['login'])){
 		//Assign variables to login inputs
 		$email = mysqli_real_escape_string($conn, $_POST['email']);
 		$password = mysqli_real_escape_string($conn, $_POST['password']);
@@ -96,15 +118,16 @@ include('config.php');
 				$errorCheckResult = "Password is correct";
 
 				//Set email value as session value
-				$_SESSION['email'] = $email;
-        //
-				// //If user checks 'keep me logged in', set cookie to last an hour
+				// $_SESSION['email'] = $email;
+
+				//If user checks 'keep me logged in', set cookie to last an hour
 				// if($keep == "on"){
 				// 	setcookie('email', $email, time()+3600);
 				// }
 				// //Redirect to homepage
-				// //header("Location: home.php");
-        // $errorCheckResult = "Logged in!"
+				// header("Location: wp-content/themes/atomtheme/page-login.php");
+        // exit();
+
 			}
 
 		}else{

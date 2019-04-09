@@ -73,18 +73,18 @@
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white" style="margin-bottom:20px;">
 					<?php
 
-					//Check if user is logged in
-           // if(logged_in()){
-           //  //assign variable for session value
-           //  $email = mysqli_real_escape_string($conn, $_SESSION['email']);
-           //  //Select logged in users first and last name based on their email
-           //  $sql = "SELECT firstName, lastName FROM users WHERE email='$email'";
-           //  $result = $conn->query($sql);
-					 //
-           //  while($row = $result->fetch_object()){
-           //      //Display first and last name of logged in user
-           //      echo "You are logged in as ".$row->firstName." ".$row->lastName.".</p>";
-           //  }
+					// //Check if user is logged in
+          //  if(logged_in()){
+          //   //assign variable for session value
+          //   $email = mysqli_real_escape_string($conn, $_SESSION['email']);
+          //   //Select logged in users first and last name based on their email
+          //   $sql = "SELECT firstName, lastName FROM users WHERE email='$email'";
+          //   $result = $conn->query($sql);
+					//
+          //   while($row = $result->fetch_object()){
+          //       //Display first and last name of logged in user
+          //       echo "You are logged in as ".$row->firstName." ".$row->lastName.".</p>";
+          //   }
 
 					?>
 				</div>
