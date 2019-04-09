@@ -9,11 +9,11 @@ define('DBNAME', 'atomtheme');
 $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
 
 //Check if connection was successful
-if(!$conn){
-    die("<span style='color:red;'>Error connecting to database</span>");
-}else{
-    echo "connected successfully";
-}
+// if(!$conn){
+//     die("<span style='color:red;'>Error connecting to database</span>");
+// }else{
+//     echo "connected successfully";
+// }
 
 session_start(); //Run session
 

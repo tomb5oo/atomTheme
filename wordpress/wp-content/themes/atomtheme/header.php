@@ -106,7 +106,7 @@
 			    </ul>
 
           <form class="form-inline my-2 my-xl-0" style="float: right;">
-			      <input name="user_query" action="<?php echo site_url('/searchresults.php'); ?>"class="form-control mr-sm-2" type="text" placeholder="Search" >
+			      <input name="user_query" action="<?php bloginfo('template_url'); ?>/searchresults.php" class="form-control mr-sm-2" type="text" placeholder="Search" >
 			      <button class="btn btn-success my-2 my-sm-0" type="button" name="search">Search</button>
 			    </form>
 
@@ -115,14 +115,14 @@
 
 
 			<?php
-				/*	wp_nav_menu( array(
+					wp_nav_menu( array(
 
 						'theme_location'		=> 'primary',
 						'containter'				=> 'nav',
 						'container_class'		=> 'navbar-collapse collapse',
 						'menu_class'				=> 'nav navbar-nav navbar-right'
 
-					)); */
+					));
 			?>
 
 			<!-- THIS HAS BEEN REPLACED BY WORDPRESS wp_nav_menu ABOVE -->
