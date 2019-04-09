@@ -845,9 +845,9 @@ box-shadow: 0px 12px 34px -8px rgba(0,0,0,0.28);
 		color:black;
 	}
 
-	::-webkit-input-placeholder {color: #DDD;}
-	:-moz-placeholder           {color: #DDD;}
-	::-moz-placeholder          {color: #DDD;}
-	:-ms-input-placeholder      {color: #DDD;}
+	::-webkit-input-placeholder {color: darkgrey;}
+	:-moz-placeholder           {color: darkgrey;}
+	::-moz-placeholder          {color: darkgrey;}
+	:-ms-input-placeholder      {color: darkgrey;}
 
 /****************************************************/

@@ -175,3 +175,19 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+/********************************************************************************************************/
+
+
+//Check if email already exists in database
+function email_taken($email, $conn){
+
+$sql = "SELECT id FROM users WHERE email='$email'";
+$result = $conn->query($sql);
+
+if(mysqli_num_rows($result) == 1){
+  return true;
+}else{
+  return false;
+}
+}

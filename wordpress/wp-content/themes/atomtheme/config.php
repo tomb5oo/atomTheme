@@ -16,3 +16,15 @@ if(!$conn){
 }
 
 session_start(); //Run session
+
+/*********************************************/
+  //Check to see if user is logged in (active session or cookie)
+function logged_in(){
+  //check if user is logged in - session or cookie is set
+  if(isset($_SESSION['email']) || isset($_COOKIE['email'])){
+    return true;
+  }else{
+    return false;
+  }
+}
+/*********************************************/

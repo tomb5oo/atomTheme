@@ -8,40 +8,16 @@
 
 include('config.php');
 
-/*********************************************/
-    //Check if email already exists in database
-	function email_taken($email, $conn){
-
-		$sql = "SELECT id FROM users WHERE email='$email'";
-		$result = $conn->query($sql);
-
-		if(mysqli_num_rows($result) == 1){
-			return true;
-		}else{
-			return false;
-		}
-	}
-	/*********************************************/
-    //Check to see if user is logged in (active session or cookie)
-	function logged_in(){
-		//check if user is logged in - session or cookie is set
-		if(isset($_SESSION['email']) || isset($_COOKIE['email'])){
-			return true;
-		}else{
-			return false;
-		}
-	}
-  /*********************************************/
 
 
-  /*********************************************/
+  /*******************************REGISTER PHP*********************************/
   //Set variable for error display message
 	$errorCheckResult = "";
 
     //check if submit button was pressed
 	if(isset($_POST['register'])){
 
-        //set form input values to variables and make sure it is a string
+      //set form input values to variables and make sure it is a string
 		$firstName = mysqli_real_escape_string($conn, $_POST['fname']);
 		$lastName = mysqli_real_escape_string($conn, $_POST['lname']);
 		$email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -90,6 +66,54 @@ include('config.php');
 			}
 		}
 	}
+  /*******************************END OF REGISTER PHP*********************************/
+
+
+  /***********************************LOGIN PHP***************************************/
+
+	if(isset($_POST['login'])){
+		//Assign variables to login inputs
+		$email = mysqli_real_escape_string($conn, $_POST['email']);
+		$password = mysqli_real_escape_string($conn, $_POST['password']);
+		$keep = isset($_POST['keep']);
+
+		//Check if email is in database
+		if(email_taken($email, $conn)){
+
+			//$errorCheckResult = "Email exists";
+			$sql = "SELECT password FROM users WHERE email='$email'";
+			$result = $conn->query($sql);
+
+			//Retrieve password column from database
+			$getPassword = mysqli_fetch_assoc($result);
+
+			//Check if password matches database for the user with the entered email
+			if(!password_verify($password, $getPassword['password'])){
+
+				$errorCheckResult = "Password is incorrect";
+
+			}else{
+				$errorCheckResult = "Password is correct";
+
+				//Set email value as session value
+				$_SESSION['email'] = $email;
+        //
+				// //If user checks 'keep me logged in', set cookie to last an hour
+				// if($keep == "on"){
+				// 	setcookie('email', $email, time()+3600);
+				// }
+				// //Redirect to homepage
+				// //header("Location: home.php");
+        // $errorCheckResult = "Logged in!"
+			}
+
+		}else{
+
+			$errorCheckResult = "Email does not exist";
+		}
+	}
+
+  /*********************************END OF LOGIN PHP**********************************/
  ?>
 
  <script>
@@ -170,8 +194,9 @@ include('config.php');
       		<li class="active" style="top:-10px;">
       			<div class="content__wrapper">
       				<form method="POST" action="">
-      					<input type="email" name="email" placeholder="email">
+      					<input type="email" name="email" placeholder="E-mail">
       					<input type="password" name="password" placeholder="Password">
+                <input type="checkbox" name="keep">Keep me logged in?</input>
       					<input type="submit" value="Login" name="login">
       				</form>
       			</div>
