@@ -1,0 +1,122 @@
+2019-04-09T14:59:12+00:00 CRITICAL Uncaught Error: Call to undefined function cart() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:70
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 70
+
+2019-04-09T14:59:45+00:00 CRITICAL Uncaught Error: Call to undefined function cart() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:69
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 69
+
+2019-04-09T15:00:15+00:00 CRITICAL Uncaught Error: Call to undefined function cart() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:69
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 69
+
+2019-04-09T15:00:28+00:00 CRITICAL Uncaught Error: Call to undefined function cart() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:69
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 69
+
+2019-04-09T15:01:26+00:00 CRITICAL Uncaught Error: Call to undefined function cart() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:29
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 29
+
+2019-04-09T15:03:21+00:00 CRITICAL Uncaught Error: Call to undefined function cart() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:26
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 26
+
+2019-04-09T15:03:43+00:00 CRITICAL Uncaught Error: Call to undefined function getIp() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:51
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 51
+
+2019-04-09T15:05:14+00:00 CRITICAL Uncaught Error: Call to undefined function getIp() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:51
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 51
+
+2019-04-09T15:08:03+00:00 CRITICAL Uncaught Error: Call to undefined function getIp() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:51
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 51
+
+2019-04-09T15:09:27+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 57
+
+2019-04-09T15:09:35+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 57
+
+2019-04-09T15:09:42+00:00 CRITICAL Uncaught Error: Call to undefined function getIp() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:120
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 120
+
+2019-04-09T15:10:03+00:00 CRITICAL Uncaught Error: Call to undefined function getIp() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:51
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 51
+
+2019-04-09T15:40:52+00:00 CRITICAL Uncaught Error: Call to undefined function getIp() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:51
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 51
+
+2019-04-09T15:50:59+00:00 CRITICAL Uncaught Error: Call to undefined function getIp() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:51
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 51
+
+2019-04-09T15:52:55+00:00 CRITICAL Uncaught Error: Call to undefined function getIp() in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php:51
+Stack trace:
+#0 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-includes/template-loader.php(77): include()
+#1 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-blog-header.php(19): require_once('/Applications/m...')
+#2 /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/index.php(17): require('/Applications/m...')
+#3 {main}
+  thrown in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 51
+
+2019-04-09T15:59:29+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 66
+
+2019-04-09T16:00:04+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 50
+
+2019-04-09T16:00:32+00:00 CRITICAL syntax error, unexpected '}', expecting end of file in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/page-cart.php on line 66
+

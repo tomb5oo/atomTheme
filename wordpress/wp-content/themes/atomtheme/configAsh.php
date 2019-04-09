@@ -2,8 +2,8 @@
 //Assign database details to variables
 define('DBHOST', 'localhost');
 define('DBUSER', 'root');
-define('DBPASS', 'techn000');
-define('DBNAME', 'atomtheme');
+define('DBPASS', 'oranges11');
+define('DBNAME', 'atomlogin');
 
 //Setup database connection
 $conn = mysqli_connect(DBHOST, DBUSER, DBPASS, DBNAME);
