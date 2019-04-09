@@ -3,34 +3,17 @@
     Template Name: Login Page
  */
 
- get_header();
+ //get_header();
  //call header.php
 
-include('config.php');
+include('configLogin.php');
+include('functionsLogin.php');
 
-//Check to see if user is logged in (active session or cookie)
-function logged_in(){
-  //check if user is logged in - session or cookie is set
-  if(isset($_SESSION['email']) || isset($_COOKIE['email'])){
-    return true;
-  }else{
-    return false;
-  }
+print_r($_SESSION);
+
+if(logged_in_atom()){
+  get_header();
 }
-
-//Check if email already exists in database
-function email_taken($email, $conn){
-
-  $sql = "SELECT id FROM users WHERE email='$email'";
-  $result = $conn->query($sql);
-
-  if(mysqli_num_rows($result) == 1){
-    return true;
-  }else{
-    return false;
-  }
-}
-
 
   /*******************************REGISTER PHP*********************************/
   //Set variable for error display message
@@ -50,37 +33,29 @@ function email_taken($email, $conn){
 		if(strlen($firstName) < 3){
 			$errorCheckResult = "First name must be at least 3 characters long.";
 		}
-
         //Check last name is at least 3 letters
 		else if(strlen($lastName) < 3){
 			$errorCheckResult = "Last name must be at least 3 characters long.";
 		}
-
         //Check that email is a valid email format
 		else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 			$errorCheckResult = "Please use a valid email.";
 		}
-
         //Check if email is already in database using function from functions.php
-		else if(email_taken($email, $conn)){
+		else if(email_exists_atom($email, $conn)){
 			$errorCheckResult = "This email is taken.";
 		}
-
         //Make sure password is at least 8 letters
 		else if(strlen($password) < 8){
 			$errorCheckResult = "Password must be at least 8 characters long.";
 		}
-
         //Check confirm matches password
 		else if($password !== $passwordConfirm){
 			$errorCheckResult = "Passwords do not match.";
 		}
-
 		else{
-
           //encrypt password
 			$password = password_hash($password, PASSWORD_DEFAULT);
-
         //Create query - insert values from inputs into a new row in users table
 			$sql = "INSERT INTO users(id, firstName, lastName, email, password, token) VALUES (NULL, '$firstName', '$lastName', '$email', '$password', '')";
 			if(mysqli_query($conn, $sql)){
@@ -100,7 +75,7 @@ function email_taken($email, $conn){
 		$keep = isset($_POST['keep']);
 
 		//Check if email is in database
-		if(email_taken($email, $conn)){
+		if(email_exists_atom($email, $conn)){
 
 			//$errorCheckResult = "Email exists";
 			$sql = "SELECT password FROM users WHERE email='$email'";
@@ -115,19 +90,12 @@ function email_taken($email, $conn){
 				$errorCheckResult = "Password is incorrect";
 
 			}else{
-				$errorCheckResult = "Password is correct";
+				//$errorCheckResult = "Password is correct";
 
 				//Set email value as session value
-				// $_SESSION['email'] = $email;
-
-				//If user checks 'keep me logged in', set cookie to last an hour
-				// if($keep == "on"){
-				// 	setcookie('email', $email, time()+3600);
-				// }
-				// //Redirect to homepage
-				// header("Location: wp-content/themes/atomtheme/page-login.php");
-        // exit();
-
+				$_SESSION['email'] = $email;
+        wp_redirect('http://localhost/atomtheme/wordpress/login');
+        exit();
 			}
 
 		}else{
@@ -247,4 +215,4 @@ function email_taken($email, $conn){
   </div>
 </div>
 
-<?php get_footer(); ?>
+<?php// get_footer(); ?>
