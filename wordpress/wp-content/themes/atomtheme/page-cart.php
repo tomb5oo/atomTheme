@@ -18,36 +18,39 @@ get_header();
 
 <!-- SEARCH BAR FUNCTIONALITY -->
 
+id, name, description, image, price, category, brand, keywords
+
 <?php
 if(isset($_GET['search'])){
 
 	$search_query = $_GET['user_query'];
 
-	$get_pro = "select * from products where product_keywords like '%$search_query%'";
+	$get_products = "SELECT * FROM products WHERE keywords LIKE '%$search_query%'";
 
-	$run_pro = mysqli_query($con, $get_pro);
+	$run_get_products = mysqli_query($con, $get_products);
 
-	while($row_pro=mysqli_fetch_array($run_pro)){
+	while($return_products=mysqli_fetch_array($run_get_products)){
 
-		$pro_id = $row_pro['product_id'];
-		$pro_cat = $row_pro['product_cat'];
-		$pro_brand = $row_pro['product_brand'];
-		$pro_title = $row_pro['product_title'];
-		$pro_price = $row_pro['product_price'];
-		$pro_image = $row_pro['product_image'];
+		$id = $return_products['$id'];
+		$name = $return_products['$name'];
+		$description = $return_products['description'];
+		$image = $return_products['image'];
+		$price = $return_products['price'];
+		$category = $return_products['category'];
+		$brand = $return_products['brand'];
 
 		echo "
 				<div id='single_product'>
 
-					<h3>$pro_title</h3>
+					<h3>$name</h3>
 
-					<img src='admin_area/product_images/$pro_image' width='180' height='180' />
+					<img src='admin_area/product_images/$image' width='180' height='180' />
 
-					<p><b> $ $pro_price </b></p>
+					<p><b> £ $price </b></p>
 
-					<a href='details.php?pro_id=$pro_id' style='float:left;'>Details</a>
+					<a href='details.php?pro_id=$id' style='float:left;'>Details</a>
 
-					<a href='index.php?pro_id=$pro_id'><button style='float:right'>Add to Cart</button></a>
+					<a href='index.php?pro_id=$id'><button style='float:right'>Add to Cart</button></a>
 
 				</div>
 
@@ -61,7 +64,7 @@ if(isset($_GET['search'])){
 
 	<!-- CART FUNCTIONALITY -->
 
-	
+
 <div class="col-md-10" id="content_area">
 
 				<?php cart(); ?>

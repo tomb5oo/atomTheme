@@ -105,8 +105,8 @@
 			      </li>
 			    </ul>
 			    <form class="form-inline my-2 my-xl-0" style="float: right;">
-			      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-			      <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
+			      <input name="user_query" class="form-control mr-sm-2" type="text" placeholder="Search" >
+			      <button class="btn btn-success my-2 my-sm-0" type="button" name="search">Search</button>
 			    </form>
 			  </div>
 			</nav>
