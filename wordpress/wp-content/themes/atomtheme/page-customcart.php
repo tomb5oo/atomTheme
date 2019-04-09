@@ -44,10 +44,10 @@ get_header();
 
 							<tr>
 								<th scope="row"><?php echo $name;?></th>
-								<td align="center"><img src="admin_area/product_images/<?php echo $image;?>" width="100" height="100"></td>
+								<td align="center"><img src=<?php bloginfo('stylesheet_directory'); ?>/assets/img/<?php echo $image; ?>" width="100" height="100"></td>
 								<td align="center"><input type="checkbox" name="remove[]" value="<?php echo $id;?>"></td>
 								<td align="center"><input type="text" size="4" name="qty"</td>
-								<td align="center"><?php echo "£" . $srice; ?></td>
+								<td align="center"><?php echo "£" . $price; ?></td>
 							</tr>
 
 								<?php
@@ -70,6 +70,6 @@ get_header();
 
 
 <?php
-get_sidebar();
+
 get_footer();
 ?>
