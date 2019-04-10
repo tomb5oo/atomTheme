@@ -26,14 +26,14 @@ get_header();
 <div class="container">
 
   <!-- Product Heading -->
-  <h1 class="my-4"><?php //echo $itempage_item_name?>Item Name Heading</h1>
+  <h1 class="my-4"><?php echo $itempage_item_name?>Item Name Heading</h1>
 
   <!-- Product Display Row -->
   <div class="row">
 
     <div class="col-md-8">
       <!--Product Image 1-->
-      <img class="img-fluid" src="<?php //echo $itempage_item_mainimage ?>http://placehold.it/750x500" alt="">
+      <img class="img-fluid" src="<?php echo $itempage_item_mainimage['url'] ?>" alt="">
     </div>
 
     <div class="col-md-4">

@@ -47,7 +47,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script><!--Bootstrap JS CDN-->
 
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
-  
+
 
 
 
@@ -116,7 +116,8 @@
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
           <?php if( !empty($your_logo) ) : ?>
-            <a id="brand-image" class="navbar-brand" href="javascript:void(0)"><img src="<?php echo $your_logo['url']; ?>" </a>
+            <a class="navbar-brand" href="javascript:void(0)"><img src="<?php echo $your_logo['url']; ?>"
+               style="float: left; padding: 0 12px 0 7px;"</a>
           <?php endif; ?>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -144,9 +145,9 @@
           </div>
           <!-- End -->
 
-          <form class="form-inline my-2 my-xl-0" style="">
-            <input name="user_query" action="<?php bloginfo('template_url'); ?>/searchresults.php" class="form-control mr-sm-2" type="text" placeholder="Search" >
-            <button class="btn btn-success my-2 my-sm-0" type="button" name="search">Search</button>
+          <form method="get" class="form-inline my-2 my-xl-0" style="" action="<?php bloginfo('template_url'); ?>/searchresults.php" enctype="multipart/form-data">
+            <input name="user_query"  class="form-control mr-sm-2" type="text" placeholder="Search" >
+            <button class="btn btn-success my-2 my-sm-0" type="submit" name="search">Search</button>
           </form>
       </nav>
     </header>

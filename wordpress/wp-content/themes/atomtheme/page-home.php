@@ -13,6 +13,14 @@ $caption_1_title      = get_field('caption_1_title');
 $caption_1_button_1   = get_field('caption_1_button_1');
 $caption_1_button_2   = get_field('caption_1_button_2');
 
+$caption_2_title      = get_field('caption_2_title');
+$caption_2_button_1   = get_field('caption_2_button_1');
+$caption_2_button_2   = get_field('caption_2_button_2');
+
+$caption_3_title      = get_field('caption_3_title');
+$caption_3_button_1   = get_field('caption_3_button_1');
+$caption_3_button_2   = get_field('caption_3_button_2');
+
 
 
 get_header();
@@ -42,17 +50,17 @@ get_header();
         <div class="carousel-item">
           <img class="d-block w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/hero-bg.jpg" alt="Second Slide" alt="Second slide" height="650px">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
-            <h3 style="font-size: 3rem;">Hello World</h3>
-            <a href="#"><button type="button" class="btn btn-secondary">Button 1</button></a>
-            <a href="#"><button type="button" class="btn btn-dark">Button 2</button></a>
+            <h3 style="font-size: 3rem;"><?php echo $caption_2_title; ?></h3>
+            <a href="#"><button type="button" class="btn btn-secondary"><?php echo $caption_2_button_1; ?></button></a>
+            <a href="#"><button type="button" class="btn btn-dark"><?php echo $caption_2_button_1; ?></button></a>
           </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/trees.jpeg" alt="Third Slide" height="650px">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
-            <h3 style="font-size: 3rem;">Hello World</h3>
-            <a href="#"><button type="button" class="btn btn-secondary">Button 1</button></a>
-            <a href="#"><button type="button" class="btn btn-dark">Button 2</button></a>
+            <h3 style="font-size: 3rem;"><?php echo $caption_3_title; ?></h3>
+            <a href="#"><button type="button" class="btn btn-secondary"><?php echo $caption_3_button_1; ?></button></a>
+            <a href="#"><button type="button" class="btn btn-dark"><?php echo $caption_3_button_2; ?></button></a>
           </div>
         </div>
       </div>

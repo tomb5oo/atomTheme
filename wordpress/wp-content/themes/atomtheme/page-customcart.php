@@ -16,11 +16,11 @@ include('configTom.php');
 
 					<thead style="background: #343a40; color: white">
 						<tr>
-							<th scope="col">Title</th>
+							<th scope="col">ID</th>
+							<th scope="col">Name</th>
+							<th scope="col">Description</th>
 							<th scope="col">Image</th>
-							<th scope="col">Remove</th>
-							<th scope="col">quantity</th>
-							<th scope="col">total price</th>
+							<th scope="col">Price</th>
 						</tr>
 					</thead>
 

@@ -20,6 +20,7 @@ get_header();
 <div class="col-md-10" id="">
 	<div class="row">
 		<div id="">
+
 				<?php
 				if(isset($_GET['search'])){
 
@@ -38,6 +39,7 @@ get_header();
 						$price = $return_products['price'];
 						$category = $return_products['category'];
 						$brand = $return_products['brand'];
+						$keywords = $return_products['keywords'];
 
 						echo "
 								<div>
@@ -58,6 +60,5 @@ get_header();
 
 <?php
 
-get_sidebar();
 get_footer();
 ?>
