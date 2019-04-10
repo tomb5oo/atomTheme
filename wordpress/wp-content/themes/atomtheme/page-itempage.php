@@ -26,7 +26,7 @@ get_header();
 <div class="container">
 
   <!-- Product Heading -->
-  <h1 class="my-4"><?php the_field('itempage_item_name') ?></h1>
+  <h1 class="my-4"><?php //echo $itempage_item_name?>Item Name Heading</h1>
 
   <!-- Product Display Row -->
   <div class="row">
@@ -46,6 +46,8 @@ get_header();
         <li><span style="font-weight:bold">Brand:</span> BrandExample</li>
         <li><span style="font-weight:bold">Category:</span> CategoryExample</li>
         <li><span style="font-weight:bold">Keywords:</span> #keyword1, #keyword2, #keyword3</li>
+        <br/>
+        <button type="submit" class="btn btn-warning">Add To Basket</button>
       </ul>
     </div>
 
