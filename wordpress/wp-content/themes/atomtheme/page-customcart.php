@@ -73,4 +73,5 @@ include('configTom.php');
 <?php
 
 get_footer();
+
 ?>

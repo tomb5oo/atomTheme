@@ -23,7 +23,7 @@ if(isset($_GET['search'])){
 
 	$run_products = mysqli_query($con, $get_products);
 
-	while($row_products=mysqli_fetch_array($run_products)){
+	while($row_products = mysqli_fetch_array($run_products)){
 
 		$pro_id = $row_products['product_id'];
 		$pro_cat = $row_products['product_cat'];
