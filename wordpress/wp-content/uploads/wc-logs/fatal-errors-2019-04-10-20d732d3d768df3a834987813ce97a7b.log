@@ -1,0 +1,4 @@
+2019-04-10T12:12:15+00:00 CRITICAL Class 'WC_Admin_Report' not found in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/plugins/woocommerce-services/classes/class-wc-connect-label-reports.php on line 6
+
+2019-04-10T12:12:25+00:00 CRITICAL Class 'WC_Admin_Report' not found in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/plugins/woocommerce-services/classes/class-wc-connect-label-reports.php on line 6
+
