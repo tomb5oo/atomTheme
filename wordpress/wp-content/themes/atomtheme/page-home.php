@@ -58,7 +58,7 @@ get_header();
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="<?php echo $carousel_image_1['url']; ?>" alt="First Slide" height="650px">
+          <img class="d-block w-100" src="<?php echo $carousel_image_1['url']; ?>" alt="First Slide" width="100%" height="auto">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
             <h3 style="font-size: 3rem;"><?php echo $caption_1_title; ?></h3>
             <a href="<?php echo $button_1_href; ?>"><button type="button" class="btn btn-secondary"><?php echo $caption_1_button_1;?></button></a>
@@ -66,7 +66,7 @@ get_header();
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="<?php echo $carousel_image_2['url']; ?>" alt="Second Slide" alt="Second slide" height="650px">
+          <img class="d-block w-100" src="<?php echo $carousel_image_2['url']; ?>" alt="Second Slide"  width="100%" height="auto">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
             <h3 style="font-size: 3rem;"><?php echo $caption_2_title; ?></h3>
             <a href="#"><button type="button" class="btn btn-secondary"><?php echo $caption_2_button_1; ?></button></a>
@@ -74,7 +74,7 @@ get_header();
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="<?php echo $carousel_image_3['url']; ?>" alt="Third Slide" height="650px">
+          <img class="d-block w-100" src="<?php echo $carousel_image_3['url']; ?>" alt="Third Slide"  width="100%" height="auto">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
             <h3 style="font-size: 3rem;"><?php echo $caption_3_title; ?></h3>
             <a href="#"><button type="button" class="btn btn-secondary"><?php echo $caption_3_button_1; ?></button></a>
@@ -101,7 +101,7 @@ get_header();
   <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_2['url']; ?>"></div>
   <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_3['url']; ?>"></div>
 
-  <a href="http://localhost:8080/atomtheme/wordpress/itempage/"><div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_4['url']; ?>"></div></a>
+  <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_4['url']; ?>"></a></div>
   <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_5['url']; ?>"></div>
 
   <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_6['url']; ?>"></div>

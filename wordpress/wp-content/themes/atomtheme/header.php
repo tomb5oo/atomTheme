@@ -115,10 +115,6 @@
           <!-- Responsive toggle button -->
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
-          <?php if( !empty($your_logo) ) : ?>
-            <a class="navbar-brand" href="javascript:void(0)"><img src="<?php echo $your_logo['url']; ?>"
-               style="float: left; padding: 0 12px 0 7px;"</a>
-          <?php endif; ?>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -129,6 +125,9 @@
 
           <!-- Website Links -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <img src="<?php echo $your_logo['url']; ?>" height="60px;" width="auto" style="float: left; padding: 0 12px 0 7px;">
+
               <?php
                    wp_nav_menu( array(
                    'menu'              => 'primary',

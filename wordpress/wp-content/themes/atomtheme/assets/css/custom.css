@@ -835,14 +835,16 @@ box-shadow: 0px 12px 34px -8px rgba(0,0,0,0.28);
 	form input:placeholder {color: blue;}
 
 	form [type="submit"]:focus,
-	form [type="submit"]:hover {background: #009CEF;}
+	form [type="submit"]:hover {background: #b24a27; color: #FFF; border-color: #cc5730}
 
 	form [type="submit"] {
-		background: #3399DD;
+		background: #ff6149;
 		color: #FFF;
-		padding: 24px;
-		width: 100%;
+		border-color: #ff6149;
+		padding: 6px 24px;
+		margin-bottom: 10px;
 		cursor: pointer;
+		border-radius: 0;
 	}
 
 	ul.tab__content li div form input {

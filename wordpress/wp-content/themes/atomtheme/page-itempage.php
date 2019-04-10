@@ -26,7 +26,7 @@ get_header();
 <div class="container">
 
   <!-- Product Heading -->
-  <h1 class="my-4"><?php echo $itempage_item_name?>Item Name Heading</h1>
+  <h1 class="my-4"><?php echo $itempage_item_name?></h1>
 
   <!-- Product Display Row -->
   <div class="row">
