@@ -7,6 +7,8 @@
  * @package urbanViolet
  */
 
+ require_once('class-wp-bootstrap-navwalker.php');
+
  function pp_scripts() {
 // Registering Bootstrap style
 wp_enqueue_style( 'bootstrap_min', get_stylesheet_directory_uri().'/css/bootstrap.min.css' );
@@ -56,6 +58,13 @@ if ( ! function_exists( 'urbanviolet_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'urbanviolet' ),
 		) );
+
+    /*custom Navigation Menus*/
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+/*End*/
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -175,5 +184,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
 
 /********************************************************************************************************/

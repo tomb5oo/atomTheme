@@ -1,0 +1,16 @@
+2019-04-10T07:42:23+00:00 CRITICAL require_once(): Failed opening required 'wp_bootstrap_navwalker.php' (include_path='.:/Applications/mampstack-7.1.17-0/php/lib/php') in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/functions.php on line 186
+
+2019-04-10T07:42:38+00:00 CRITICAL require_once(): Failed opening required 'wp_bootstrap_navwalker.php' (include_path='.:/Applications/mampstack-7.1.17-0/php/lib/php') in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/functions.php on line 186
+
+2019-04-10T07:42:55+00:00 CRITICAL require_once(): Failed opening required 'wp_bootstrap_navwalker.php' (include_path='.:/Applications/mampstack-7.1.17-0/php/lib/php') in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/functions.php on line 186
+
+2019-04-10T07:43:21+00:00 CRITICAL require_once(): Failed opening required 'wp_bootstrap_navwalker.php' (include_path='.:/Applications/mampstack-7.1.17-0/php/lib/php') in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/functions.php on line 186
+
+2019-04-10T07:43:37+00:00 CRITICAL require_once(): Failed opening required 'wp_bootstrap_navwalker.php' (include_path='.:/Applications/mampstack-7.1.17-0/php/lib/php') in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/functions.php on line 186
+
+2019-04-10T07:43:53+00:00 CRITICAL require_once(): Failed opening required 'wp_bootstrap_navwalker.php' (include_path='.:/Applications/mampstack-7.1.17-0/php/lib/php') in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/functions.php on line 186
+
+2019-04-10T07:44:17+00:00 CRITICAL require_once(): Failed opening required 'wp_bootstrap_navwalker.php' (include_path='.:/Applications/mampstack-7.1.17-0/php/lib/php') in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/functions.php on line 10
+
+2019-04-10T07:45:47+00:00 CRITICAL require_once(): Failed opening required 'wp_bootstrap_navwalker.php' (include_path='.:/Applications/mampstack-7.1.17-0/php/lib/php') in /Applications/mampstack-7.1.17-0/apache2/htdocs/atomtheme/wordpress/wp-content/themes/atomtheme/functions.php on line 10
+
