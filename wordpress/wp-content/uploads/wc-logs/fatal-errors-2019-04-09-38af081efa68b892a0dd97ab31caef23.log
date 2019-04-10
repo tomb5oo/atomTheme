@@ -53,3 +53,39 @@ Stack trace:
 
 2019-04-09T21:13:16+00:00 CRITICAL require_once(): Failed opening required 'C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\plugins\woocommerce-gateway-stripe/includes/admin/class-wc-stripe-privacy.php' (include_path='.;C:/Bitnami/wampstack-7.1.17-0/php/PEAR') in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\plugins\woocommerce-gateway-stripe\woocommerce-gateway-stripe.php on line 108
 
+2019-04-09T21:19:56+00:00 CRITICAL require_once(): Failed opening required 'C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\plugins\woocommerce-gateway-stripe/includes/admin/class-wc-stripe-privacy.php' (include_path='.;C:/Bitnami/wampstack-7.1.17-0/php/PEAR') in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\plugins\woocommerce-gateway-stripe\woocommerce-gateway-stripe.php on line 108
+
+2019-04-09T21:22:39+00:00 CRITICAL require_once(): Failed opening required 'C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\plugins\woocommerce-gateway-stripe/includes/admin/class-wc-stripe-privacy.php' (include_path='.;C:/Bitnami/wampstack-7.1.17-0/php/PEAR') in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\plugins\woocommerce-gateway-stripe\woocommerce-gateway-stripe.php on line 108
+
+2019-04-09T21:39:41+00:00 CRITICAL Uncaught Error: Call to undefined function individualProductCarousel() in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\themes\atomtheme\page-itempage.php:39
+Stack trace:
+#0 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-includes\template-loader.php(77): include()
+#1 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-blog-header.php(19): require_once('C:\\Bitnami\\wamp...')
+#2 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\index.php(17): require('C:\\Bitnami\\wamp...')
+#3 {main}
+  thrown in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\themes\atomtheme\page-itempage.php on line 39
+
+2019-04-09T21:51:36+00:00 CRITICAL Uncaught Error: Call to undefined function individualProductCarousel() in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\themes\atomtheme\page-itempage.php:39
+Stack trace:
+#0 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-includes\template-loader.php(77): include()
+#1 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-blog-header.php(19): require_once('C:\\Bitnami\\wamp...')
+#2 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\index.php(17): require('C:\\Bitnami\\wamp...')
+#3 {main}
+  thrown in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\themes\atomtheme\page-itempage.php on line 39
+
+2019-04-09T21:51:45+00:00 CRITICAL Uncaught Error: Call to undefined function individualProductCarousel() in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\themes\atomtheme\page-itempage.php:39
+Stack trace:
+#0 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-includes\template-loader.php(77): include()
+#1 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-blog-header.php(19): require_once('C:\\Bitnami\\wamp...')
+#2 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\index.php(17): require('C:\\Bitnami\\wamp...')
+#3 {main}
+  thrown in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\themes\atomtheme\page-itempage.php on line 39
+
+2019-04-09T21:52:31+00:00 CRITICAL Uncaught Error: Call to undefined function individualProductCarousel() in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\themes\atomtheme\page-itempage.php:39
+Stack trace:
+#0 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-includes\template-loader.php(77): include()
+#1 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-blog-header.php(19): require_once('C:\\Bitnami\\wamp...')
+#2 C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\index.php(17): require('C:\\Bitnami\\wamp...')
+#3 {main}
+  thrown in C:\Bitnami\wampstack-7.1.17-0\apache2\htdocs\atomtheme\wordpress\wp-content\themes\atomtheme\page-itempage.php on line 39
+
