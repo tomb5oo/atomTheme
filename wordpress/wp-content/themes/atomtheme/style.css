@@ -735,6 +735,10 @@ body {
 
 }
 
+#brand-image {
+	max-width: "50px"; !important
+}
+
 
 /*GLOBAL*/
 

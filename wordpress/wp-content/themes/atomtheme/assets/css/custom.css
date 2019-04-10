@@ -17,6 +17,10 @@ body {
 	background: url(../img/tile.jpg) top left repeat;
 }
 
+#brand-image {
+	max-width: 5px;
+}
+
 /*GLOBAL*/
 
 h1, h2, h3, h4, h5, h6 {

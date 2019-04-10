@@ -47,6 +47,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script><!--Bootstrap JS CDN-->
 
     <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">
+  
 
 
 
@@ -112,15 +113,18 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
           <!-- Responsive toggle button -->
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+          <?php if( !empty($your_logo) ) : ?>
+            <a id="brand-image" class="navbar-brand" href="javascript:void(0)"><img src="<?php echo $your_logo['url']; ?>" </a>
+          <?php endif; ?>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <!-- End -->
 
-          <?php if( !empty($your_logo) ) : ?>
-            <a class="navbar-brand" href="javascript:void(0)"><img src="<?php echo $your_logo['url']; ?>"</a>
-          <?php endif; ?>
+
 
           <!-- Website Links -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
