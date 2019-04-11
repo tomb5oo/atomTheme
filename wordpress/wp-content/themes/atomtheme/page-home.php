@@ -61,24 +61,24 @@ get_header();
           <img class="d-block w-100" src="<?php echo $carousel_image_1['url']; ?>" alt="First Slide" width="100%" height="auto">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
             <h3 style="font-size: 3rem;"><?php echo $caption_1_title; ?></h3>
-            <a href="<?php echo $button_1_href; ?>"><button type="button" class="btn btn-secondary"><?php echo $caption_1_button_1;?></button></a>
-            <a href="#"><button type="button" class="btn btn-dark"><?php echo $caption_1_button_2; ?></button></a>
+            <a href="<?php echo $button_1_href; ?>"><button type="button" class="btn btn-secondary" style="border-radius:0;"><?php echo $caption_1_button_1;?></button></a>
+            <a href="#"><button type="button" class="btn btn-dark" style="border-radius:0;"><?php echo $caption_1_button_2; ?></button></a>
           </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="<?php echo $carousel_image_2['url']; ?>" alt="Second Slide"  width="100%" height="auto">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
             <h3 style="font-size: 3rem;"><?php echo $caption_2_title; ?></h3>
-            <a href="#"><button type="button" class="btn btn-secondary"><?php echo $caption_2_button_1; ?></button></a>
-            <a href="#"><button type="button" class="btn btn-dark"><?php echo $caption_2_button_1; ?></button></a>
+            <a href="#"><button type="button" class="btn btn-secondary" style="border-radius:0;"><?php echo $caption_2_button_1; ?></button></a>
+            <a href="#"><button type="button" class="btn btn-dark" style="border-radius:0;"><?php echo $caption_2_button_1; ?></button></a>
           </div>
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="<?php echo $carousel_image_3['url']; ?>" alt="Third Slide"  width="100%" height="auto">
           <div class="carousel-caption d-md-block" style="margin: 22rem 0;">
             <h3 style="font-size: 3rem;"><?php echo $caption_3_title; ?></h3>
-            <a href="#"><button type="button" class="btn btn-secondary"><?php echo $caption_3_button_1; ?></button></a>
-            <a href="#"><button type="button" class="btn btn-dark"><?php echo $caption_3_button_2; ?></button></a>
+            <a href="#"><button type="button" class="btn btn-secondary" style="border-radius:0;"><?php echo $caption_3_button_1; ?></button></a>
+            <a href="#"><button type="button" class="btn btn-dark" style="border-radius:0;"><?php echo $caption_3_button_2; ?></button></a>
           </div>
         </div>
       </div>
@@ -92,7 +92,6 @@ get_header();
       </a>
     </div>
   </div>
-
 </div>
 
 <div class="row" style="padding:20px;">
