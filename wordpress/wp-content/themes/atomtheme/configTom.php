@@ -2,7 +2,7 @@
 //Assign database details to variables
 define('DBHOST', 'localhost');
 define('DBUSER', 'root');
-define('DBPASS', 'oranges11');
+define('DBPASS', 'techn000');
 define('DBNAME', 'atomtheme');
 
 //Setup database connection

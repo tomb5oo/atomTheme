@@ -4,8 +4,8 @@
 get_header();
 
 ///////COMMENT OUT OTHER PERSONS CONFIG//////
-//include('configTom.php');
-include('configAsh.php');
+include('configTom.php');
+// include('configAsh.php');
 
 
 ?>
@@ -41,7 +41,7 @@ include('configAsh.php');
 									//Run while there is data available
 									// while($row = $result->fetch_object()){
 
-							$get_products = "SELECT * FROM search ORDER BY id ASC";
+							$get_products = "SELECT * FROM products ORDER BY id ASC";
 
 							// $get_cart = $conn->query($get_products);
 							$get_cart = mysqli_query($conn, $get_products);

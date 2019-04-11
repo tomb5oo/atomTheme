@@ -142,9 +142,9 @@
               ?>
           </div>
           <!-- End -->
-          <form method="get" class="form-inline my-2 my-xl-0" style="" action="<?php //bloginfo('template_url'); ?>http://localhost:8080/atomtheme/wordpress/searchresults.php" enctype="multipart/form-data">
+          <form method="get" class="form-inline my-2 my-xl-0" style="" action="http://localhost:8080/atomtheme/wordpress/searchresults.php" enctype="multipart/form-data">
             <input name="user_query"  class="form-control mr-sm-2" type="text" placeholder="Search" style="margin-top:12px;border-radius:0;">
-            <button class="btn btn-success my-2 my-sm-0" type="submit" name="search">Search</button>
+            <button class="btn btn-success my-2 my-sm-0" type="submit" name="search1">Search</button>
           </form>
       </nav>
 
