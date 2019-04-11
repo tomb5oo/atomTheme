@@ -4,8 +4,8 @@
 get_header();
 
 ///////COMMENT OUT OTHER PERSONS CONFIG//////
-include('configTom.php');
-// include('configAsh.php');
+//include('configTom.php');
+ include('configAsh.php');
 
 
 ?>
@@ -28,7 +28,6 @@ include('configTom.php');
 							<th scope="col" style="text-align:center">Description</th>
 							<th scope="col" style="text-align:center">Image</th>
 							<th scope="col" style="text-align:center">Price</th>
-							<th scope="col" style="text-align:center">Quantity</th>
 							<th scope="col" style="text-align:center">✓</th>
 						</tr>
 					</thead>
@@ -41,10 +40,10 @@ include('configTom.php');
 									//Run while there is data available
 									// while($row = $result->fetch_object()){
 
-							$get_products = "SELECT * FROM products ORDER BY id ASC";
+							$get_cart_items = "SELECT * FROM cart ORDER BY id ASC";
 
-							// $get_cart = $conn->query($get_products);
-							$get_cart = mysqli_query($conn, $get_products);
+							// $get_cart = $conn->query($get_cart_items);
+							$get_cart = mysqli_query($conn, $get_cart_items);
 
 							while ($cart_items = mysqli_fetch_array($get_cart)) {
 
@@ -66,8 +65,27 @@ include('configTom.php');
 							<td style="text-align:center"><?php echo $description; ?></td>
 							<td style="text-align:center"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/<?php echo $image; ?>" width="auto" height="100px"></td>
 							<td style="text-align:center"><?php echo "£" . $price; ?></td>
-							<td style="text-align:center"><input type="text" placeholder="Quantity" size="4" name="qty" style="width:100%"></td>
-							<td style="text-align:center"><input type="checkbox" name="remove[]" style="width:10px;" value="<?php echo $cart_items->id;?>"></td>
+							<td style="text-align:center">
+								<form method="post" action="">
+									<input type="checkbox" name="deleteitem" style="width:10px;" value="1">
+									<button class="btn btn-primary" type="submit" name="deleteitemsubmit">Delete</button>
+								</form>
+								<?php
+								if(isset($_POST['deleteitemsubmit'])){
+
+									//Assign variable to id value
+									$deleteItem = $_POST['deleteitem'];
+
+									//Delete post with selected id
+									$sql = "DELETE * FROM cart WHERE id='$deleteItem";
+									$result = $conn->query($sql);
+
+									//Return to blogs.php
+									// header('Location: ../blogs.php');
+									// exit();
+								}
+								?>
+							</td>
 						</tr>
 
 						<?php
@@ -78,9 +96,13 @@ include('configTom.php');
 
 				<div class="btn-group" role="group" aria-label="Basic example" style="float: right;">
 
-				<button class="btn btn-primary" type="submit">Delete Checked</button>
-				<button class="btn btn-primary" type="submit">Continue Shopping</button>
-				<a href="checkout.php">
+					<a href="#">
+						<button class="btn btn-primary" type="submit">Delete Checked</button>
+					</a>
+				<a href="http://localhost:8080/atomtheme/wordpress">
+					<button class="btn btn-primary" type="submit">Continue Shopping</button>
+				</a>
+				<a href="#">
 					<button class="btn btn-primary" type="submit">Checkout</button>
 				</a>
 				</div>
