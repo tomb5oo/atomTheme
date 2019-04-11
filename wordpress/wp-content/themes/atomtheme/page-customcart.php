@@ -4,8 +4,8 @@
 get_header();
 
 ///////COMMENT OUT OTHER PERSONS CONFIG//////
-//include('configTom.php');
- include('configAsh.php');
+include('configTom.php');
+ // include('configAsh.php');
 
 
 ?>
