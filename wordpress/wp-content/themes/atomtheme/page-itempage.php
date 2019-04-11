@@ -20,13 +20,16 @@ $itempage_item_keywords = get_field('itempage_item_keywords');
 
 
 get_header();
+
 ?>
+
+
 
 <!-- Page Content -->
 <div class="container">
 
   <!-- Product Heading -->
-  <h1 class="my-4"><?php echo $itempage_item_name?></h1>
+  <h1 class="my-4"><?php echo $name?></h1>
 
   <!-- Product Display Row -->
   <div class="row">
@@ -54,39 +57,53 @@ get_header();
   </div>
   <!-- /.row -->
 
-  <!-- Other Products Row -->
   <h3 class="my-4">More Product Images</h3>
 
   <div class="row">
 
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-    </div>
+  <!-- Other Products Row -->
+  <?php
+    // $sql = "SELECT * FROM search ORDER BY id DESC";
+    // $result = $conn->query($sql);
+        //Run while there is data available
+        // while($row = $result->fetch_object()){
+
+    $get_cart_items = "SELECT * FROM products ORDER BY id ASC";
+
+    // $get_cart = $conn->query($get_cart_items);
+    $get_cart = mysqli_query($conn, $get_cart_items);
+
+    while ($cart_items = mysqli_fetch_array($get_cart)) {
+
+      $id = $cart_items->id;
+      $name = $cart_items->name;
+
+      $id = $cart_items['id'];
+      $name = $cart_items['name'];
+      $description = $cart_items['description'];
+      $image = $cart_items['image'];
+      $price = $cart_items['price'];
+      $category = $cart_items['category'];
+      $brand = $cart_items['brand'];
+
+  ?>
+
 
     <div class="col-md-3 col-sm-6 mb-4">
       <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-    </div>
+        <img class="img-fluid" src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/<?php echo $image; ?>" alt="">
+      </a>
+        <p>
+          <?php echo $name; ?>
+        </p>
+      </div>
 
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-    </div>
+      <?php } ?>
 
-    <div class="col-md-3 col-sm-6 mb-4">
-      <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
     </div>
-
-  </div>
   <!-- /.row -->
 
-</div>
+  </div>
 <!-- /.container -->
 
 <?php get_footer(); ?>

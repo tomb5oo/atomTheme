@@ -66,25 +66,7 @@ include('configTom.php');
 							<td style="text-align:center"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/<?php echo $image; ?>" width="auto" height="100px"></td>
 							<td style="text-align:center"><?php echo "£" . $price; ?></td>
 							<td style="text-align:center">
-								<form method="post" action="">
-									<input type="checkbox" name="deleteitem" style="width:10px;" value="1">
-									<button class="btn btn-primary" type="submit" name="deleteitemsubmit">Delete</button>
-								</form>
-								<?php
-								if(isset($_POST['deleteitemsubmit'])){
 
-									//Assign variable to id value
-									$deleteItem = $_POST['deleteitem'];
-
-									//Delete post with selected id
-									$sql = "DELETE * FROM cart WHERE id='$deleteItem";
-									$result = $conn->query($sql);
-
-									//Return to blogs.php
-									// header('Location: ../blogs.php');
-									// exit();
-								}
-								?>
 							</td>
 						</tr>
 
@@ -94,17 +76,29 @@ include('configTom.php');
 					</tbody>
 				</table>
 
-				<div class="btn-group" role="group" aria-label="Basic example" style="float: right;">
+				<div class="col-12" style="float: right;">
 
-					<a href="#">
-						<button class="btn btn-primary" type="submit">Delete Checked</button>
-					</a>
-				<a href="http://localhost:8080/atomtheme/wordpress">
+				<!-- <a href="<?php //bloginfo('url'); ?>">
 					<button class="btn btn-primary" type="submit">Continue Shopping</button>
-				</a>
-				<a href="#">
-					<button class="btn btn-primary" type="submit">Checkout</button>
-				</a>
+				</a> -->
+				<form method="post" action="">
+					<!-- <input type="checkbox" name="deleteitem" style="width:10px;" value=""> -->
+					<button class="btn btn-primary" type="submit" name="deleteitemsubmit">Clear Cart</button>
+				</form>
+				<?php
+				if(isset($_POST['deleteitemsubmit'])){
+					//Assign variable to id value
+					$deleteItem = $id;
+
+					//Delete post with selected id
+					$sql = "DELETE FROM cart";
+					$result = mysqli_query($conn, $sql);
+
+					//Return to blogs.php
+					// header('Location: ../blogs.php');
+					// exit();
+				}
+				?>
 				</div>
 			</form>
 		</div>
