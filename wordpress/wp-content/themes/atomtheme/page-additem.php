@@ -81,7 +81,8 @@
 
 
           //Insert new row into search table with submitted inputs
-          $sql = "INSERT INTO products (id, name, description, image, price, category, brand, keywords) VALUES (NULL, '$name', '$description', '$product_image', '$price', '$category', '$brand', '$keywords')";
+          $sql = "INSERT INTO products (id, name, description, image, price, category, brand, keywords)
+          VALUES (NULL, '$name', '$description', '$product_image', '$price', '$category', '$brand', '$keywords')";
           // $result = $conn->query($sql);
           $result = mysqli_query($conn, $sql);
 
