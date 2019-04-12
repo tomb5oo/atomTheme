@@ -3,7 +3,7 @@
   get_header();
 
   ///////COMMENT OUT OTHER PERSONS CONFIG//////
-  include('configTom.php');
+  include('config.php');
    // include('configAsh.php');
 
 
@@ -47,7 +47,7 @@
           <div class="form-group">
             <input type="text" class="form-control" name="keywords1" placeholder="Keywords (Seperated by commas)">
           </div>
-          <input type="submit" name="submit" class="btn btn-danger" value="submit">
+          <button class="btn btn-primary" type="submit">Purchase</button>
         </form>
       </div>
     </div>

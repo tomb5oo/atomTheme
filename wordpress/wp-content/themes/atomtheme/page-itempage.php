@@ -40,6 +40,7 @@ get_header();
     </div>
 
     <div class="col-md-4">
+      <form>
       <h3 class="my-3"><?php //echo $itempage_item_description ?>Product Description</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
       <br/>
@@ -50,8 +51,9 @@ get_header();
         <li><span style="font-weight:bold">Category:</span> CategoryExample</li>
         <li><span style="font-weight:bold">Keywords:</span> #keyword1, #keyword2, #keyword3</li>
         <br/>
-        <button type="submit">Add To Basket</button>
+        <button type="submit" ><a href="http://localhost:8080/atomtheme/wordpress/customcart/" style="color: white">Purchase</a></button>
       </ul>
+    </form>
     </div>
 
   </div>

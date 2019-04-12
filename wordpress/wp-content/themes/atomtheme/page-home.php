@@ -96,16 +96,16 @@ get_header();
 
 <div class="row" style="padding:20px;">
   <!-- below can be replaced by 'php allProducts function -->
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_1['url']; ?>"></div>
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_2['url']; ?>"></div>
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_3['url']; ?>"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_1['url']; ?>"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_2['url']; ?>"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_3['url']; ?>"></div>
 
   <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_4['url']; ?>"></a></div>
-  <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_5['url']; ?>"></div>
+  <div class="col-lg-6 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_5['url']; ?>"></div>
 
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_6['url']; ?>"></div>
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_7['url']; ?>"></div>
-  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><img src="<?php echo $image_8['url']; ?>"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_6['url']; ?>"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_7['url']; ?>"></div>
+  <div class="col-lg-4 col-md-6 col-xs-12" style="padding: 1rem;"><a href="http://localhost:8080/atomtheme/wordpress/itempage/"><img src="<?php echo $image_8['url']; ?>"></div>
 </div>
 
 </div>
