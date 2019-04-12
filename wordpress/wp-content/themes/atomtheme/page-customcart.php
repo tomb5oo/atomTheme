@@ -78,9 +78,9 @@ include('configTom.php');
 
 				<div class="col-12" style="float: right;">
 
-				<!-- <a href="<?php //bloginfo('url'); ?>">
-					<button class="btn btn-primary" type="submit">Continue Shopping</button>
-				</a> -->
+				<a href="<?php //bloginfo('url'); ?>">
+					<button class="btn btn-primary" type="submit">Purchase</button>
+				</a>
 				<form method="post" action="">
 					<!-- <input type="checkbox" name="deleteitem" style="width:10px;" value=""> -->
 					<button class="btn btn-primary" type="submit" name="deleteitemsubmit">Clear Cart</button>

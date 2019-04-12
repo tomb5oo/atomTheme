@@ -50,7 +50,7 @@ get_header();
         <li><span style="font-weight:bold">Category:</span> CategoryExample</li>
         <li><span style="font-weight:bold">Keywords:</span> #keyword1, #keyword2, #keyword3</li>
         <br/>
-        <button type="submit" class="btn btn-warning">Add To Basket</button>
+        <button type="submit">Add To Basket</button>
       </ul>
     </div>
 

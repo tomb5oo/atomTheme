@@ -31,12 +31,12 @@ $caption_3_button_2   = get_field('caption_3_button_2');
 
 $image_1     = get_field('image_1');
 $image_2     = get_field('image_2');
-$image_3     = get_field('image_2');
-$image_4     = get_field('image_2');
-$image_5     = get_field('image_2');
-$image_6     = get_field('image_2');
-$image_7     = get_field('image_2');
-$image_8     = get_field('image_2');
+$image_3     = get_field('image_3');
+$image_4     = get_field('image_4');
+$image_5     = get_field('image_5');
+$image_6     = get_field('image_6');
+$image_7     = get_field('image_7');
+$image_8     = get_field('image_8');
 
 
 

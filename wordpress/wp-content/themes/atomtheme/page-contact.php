@@ -1,12 +1,24 @@
-<?php get_header(); ?>
+<?php
+
+$company_name     = get_field('company_name');
+$company_address  = get_field('company_address');
+$company_hours    = get_field('company_hours');
+$company_phone    = get_field('company_phone');
+$company_email    = get_field('company_email');
+
+
+get_header(); ?>
+
+
+
 
   <!-- ================ contact section start ================= -->
   <section class="section-margin">
     <div class="container">
       <div class="d-none d-sm-block mb-5 pb-4">
-        
-      </div>
 
+      </div>
+          <
 
       <div class="row">
         <div class="col-12">
@@ -40,7 +52,8 @@
               <button type="submit" class="button button-contactForm">Send Message</button>
             </div>
           </form>
-
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152201.77188059303!2d-3.0561408714013165!3d53.41209544328504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487adf8a647060b7%3A0x42dc046f3f176e01!2sLiverpool!5e0!3m2!1sen!2suk!4v1555062039212!5m2!1sen!2suk"
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
         </div>
 
@@ -48,23 +61,19 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
-              <h3>Buttonwood, California.</h3>
-              <p>Rosemead, CA 91770</p>
+              <h3><?php echo $company_name; ?></h3>
+              <p><?php echo $company_address; ?></p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
             <div class="media-body">
-              <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-              <p>Mon to Fri 9am to 6pm</p>
+              <h3><a href="tel:454545654"><?php echo $company_phone; ?></a></h3>
+              <p><?php echo $company_hours; ?></p>
             </div>
           </div>
           <div class="media contact-info">
-            <span class="contact-info__icon"><i class="ti-email"></i></span>
-            <div class="media-body">
-              <h3><a href="/cdn-cgi/l/email-protection#4e3d3b3e3e213c3a0e2d2122213c22272c602d2123"><span class="__cf_email__" data-cfemail="780b0d0808170a0c381b1714170a14111a561b1715">[email&#160;protected]</span></a></h3>
-              <p>Send us your query anytime!</p>
-            </div>
+            <span class="contact-info__icon"><i><?php echo $company_email; ?></i></span>
           </div>
         </div>
       </div>
